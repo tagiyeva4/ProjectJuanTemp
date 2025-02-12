@@ -20,6 +20,7 @@ namespace MiniAppJuanTemplate.Controllers
             homeVm.Services=_juanAppDbContext.HomeServices.ToList();
             homeVm.Brands=_juanAppDbContext.Brands.ToList();
             homeVm.Blogs=_juanAppDbContext.Blogs.ToList();
+            homeVm.Products=_juanAppDbContext.Products.ToList();
             return View(homeVm);
         }
     }

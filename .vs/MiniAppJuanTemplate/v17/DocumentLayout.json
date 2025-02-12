@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\models\\producttag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\models\\producttag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\areas\\manage\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\areas\\manage\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\attributes\\maxsizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\attributes\\maxsizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\attributes\\allowedtypeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\attributes\\allowedtypeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\models\\productimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\helpers\\filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\helpers\\filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\areas\\manage\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\areas\\manage\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\areas\\manage\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\areas\\manage\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +38,97 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductTag.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Models\\ProductTag.cs",
-              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Models\\ProductTag.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Models\\ProductTag.cs",
-              "RelativeToolTip": "MiniAppJuanTemplate\\Models\\ProductTag.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T23:14:10.44Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Models\\Category.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Models\\Category.cs",
-              "RelativeToolTip": "MiniAppJuanTemplate\\Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
+              "Title": "AllowedTypeAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Attributes\\AllowedTypeAttribute.cs",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Attributes\\AllowedTypeAttribute.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Attributes\\AllowedTypeAttribute.cs",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Attributes\\AllowedTypeAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T23:03:41.794Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProductImage.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Models\\ProductImage.cs",
-              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Models\\ProductImage.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Models\\ProductImage.cs",
-              "RelativeToolTip": "MiniAppJuanTemplate\\Models\\ProductImage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T23:01:20.775Z",
+              "WhenOpened": "2025-02-12T13:19:54.947Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Models\\Product.cs",
-              "RelativeToolTip": "MiniAppJuanTemplate\\Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Title": "MaxSizeAttribute.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Attributes\\MaxSizeAttribute.cs",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Attributes\\MaxSizeAttribute.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Attributes\\MaxSizeAttribute.cs",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Attributes\\MaxSizeAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T22:58:34.23Z",
+              "WhenOpened": "2025-02-12T13:18:22.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SliderController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\SliderController.cs",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\SliderController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\SliderController.cs",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\SliderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T13:02:32.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Slider.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Models\\Slider.cs",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Models\\Slider.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Models\\Slider.cs",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Models\\Slider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T13:17:08.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FileManager.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Helpers\\FileManager.cs",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Helpers\\FileManager.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Helpers\\FileManager.cs",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Helpers\\FileManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T13:10:14.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Areas\\Manage\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Areas\\Manage\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAmwEMBAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T12:33:16.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Areas\\Manage\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Areas\\Manage\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-12T12:27:50.622Z",
               "EditorCaption": ""
             }
           ]
