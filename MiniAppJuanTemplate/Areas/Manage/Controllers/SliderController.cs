@@ -43,11 +43,11 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             }
             var file = slider.Photo;
           
-            if (_juanAppDbContext.Sliders.Any(s => s.Title.Trim().ToLower() == slider.Title.Trim().ToLower()))
-            {
-                ModelState.AddModelError("Title", "This slider already exist");
-                return View();
-            }
+            //if (_juanAppDbContext.Sliders.Any(s => s.Title.Trim().ToLower() == slider.Title.Trim().ToLower()))
+            //{
+            //    ModelState.AddModelError("Title", "This slider already exist");
+            //    return View();
+            //}
             slider.Image = file.SaveImage(_env.WebRootPath, "assets/img/slider");
            
            _juanAppDbContext.Sliders.Add(slider);
@@ -85,8 +85,8 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             string oldImage = existSlider.Image;
             if (file != null)
             {
-                existSlider.Image = file.SaveImage(_env.WebRootPath, "assets/image/bg-images");
-                var deletedImagePath = Path.Combine(_env.WebRootPath, "assets/image/bg-images", oldImage);
+                existSlider.Image = file.SaveImage(_env.WebRootPath, "assets/img/product");
+                var deletedImagePath = Path.Combine(_env.WebRootPath, "assets/img/product", oldImage);
                 if (!FileManager.DeleteFile(deletedImagePath))
                 {
                     return BadRequest();

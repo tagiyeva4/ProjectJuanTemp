@@ -21,7 +21,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
 
         public IActionResult Index(int page = 1, int take = 2)
         {
-            var query = _juanAppDbContext.Tags.Include(c => c.Products);
+            var query = _juanAppDbContext.Tags.Include(c => c.ProductsTags);
             PaginatedList<Tag> paginatedlist = PaginatedList<Tag>.Create(query, take, page);
             return View(paginatedlist);
         }
@@ -31,28 +31,28 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Category category)
+        public IActionResult Create(Tag tag)
         {
             if (!ModelState.IsValid)
             {
                 return View();
             }
-            if (_juanAppDbContext.Category.Any(c => c.Name.Trim().ToLower() == category.Name.Trim().ToLower()))
+            if (_juanAppDbContext.Tags.Any(c => c.Name.Trim().ToLower() == tag.Name.Trim().ToLower()))
             {
-                ModelState.AddModelError("Name", "This genre already exist");
+                ModelState.AddModelError("Name", "This tag already exist");
                 return View();
             }
-            _juanAppDbContext.Category.Add(category);
+            _juanAppDbContext.Tags.Add(tag);
             _juanAppDbContext.SaveChanges();
             return RedirectToAction("Index");
-        }
+            }
         public IActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
-            Tag tag = _juanAppDbContext.Tags.Include(t => t.Products).FirstOrDefault(t => t.Id == id);
+            Tag tag = _juanAppDbContext.Tags.Include(t => t.ProductsTags).FirstOrDefault(t => t.Id == id);
             if (tag == null)
             {
                 return NotFound();
@@ -72,7 +72,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
                 ModelState.AddModelError("Name", "This genre already exist");
                 return View();
             }
-            Tag existTag = _juanAppDbContext.Tags.Include(t => t.Products).FirstOrDefault(t => t.Id == tag.Id);
+            Tag existTag = _juanAppDbContext.Tags.Include(t => t.ProductsTags).FirstOrDefault(t => t.Id == tag.Id);
             if (tag == null)
             {
                 return NotFound();
@@ -87,7 +87,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             {
                 return NotFound();
             }
-            Tag tag = _juanAppDbContext.Tags.Include(t => t.Products).FirstOrDefault(t => t.Id == id);
+            Tag tag = _juanAppDbContext.Tags.Include(t => t.ProductsTags).FirstOrDefault(t => t.Id == id);
             if (tag== null)
             {
                 return NotFound();
@@ -95,7 +95,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             _juanAppDbContext.Tags.Remove(tag);
             _juanAppDbContext.SaveChanges();
 
-            return Ok();
+            return RedirectToAction("Index","Tag");
         }
         public IActionResult Detail(int? id)
         {
@@ -103,7 +103,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             {
                 return NotFound();
             }
-            Tag tag = _juanAppDbContext.Tags.Include(t => t.Products).FirstOrDefault(t => t.Id == id);
+            Tag tag = _juanAppDbContext.Tags.Include(t => t.ProductsTags).FirstOrDefault(t => t.Id == id);
             if (tag == null)
             {
                 return NotFound();

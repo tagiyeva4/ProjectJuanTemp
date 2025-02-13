@@ -22,7 +22,7 @@ namespace MiniAppJuanTemplate.Models
 		[Required]
 		[MaxLength(100)]
 		public string ButtonLink { get; set; }
-		public string Image { get; set; }
+		public string? Image { get; set; }
 		public int Order { get; set; }
         [NotMapped]
         [MaxSize(2 * 1024 * 1024)]

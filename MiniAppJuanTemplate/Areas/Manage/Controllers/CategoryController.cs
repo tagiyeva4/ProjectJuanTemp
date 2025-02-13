@@ -9,7 +9,7 @@ using MiniAppJuanTemplate.Models;
 namespace MiniAppJuanTemplate.Areas.Manage.Controllers
 {
     [Area("Manage")]
-    //[Authorize(Roles = "admin,superadmin")]
+   // [Authorize(Roles = "admin,superadmin")]
     public class CategoryController : Controller
     {
         private readonly   JuanAppDbContext _juanAppDbContext;
@@ -39,7 +39,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             }
             if (_juanAppDbContext.Category.Any(c => c.Name.Trim().ToLower() == category.Name.Trim().ToLower()))
             {
-                ModelState.AddModelError("Name", "This genre already exist");
+                ModelState.AddModelError("Name", "This category already exist");
                 return View();
             }
             _juanAppDbContext.Category.Add(category);
@@ -87,7 +87,8 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             {
                 return NotFound();
             }
-            Category category = _juanAppDbContext.Category.Include(c =>c.Products ).FirstOrDefault(c=> c.Id == id);
+            Category? category = _juanAppDbContext.Category.Include(c =>c.Products ).FirstOrDefault(c=> c.Id == id);
+
             if (category == null)
             {
                 return NotFound();
@@ -95,7 +96,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             _juanAppDbContext.Category.Remove(category);
             _juanAppDbContext.SaveChanges();
 
-            return Ok();
+            return RedirectToAction("Index","Category");
         }
         public IActionResult Detail(int? id)
         {

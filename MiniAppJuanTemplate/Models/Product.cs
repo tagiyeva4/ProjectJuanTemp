@@ -18,7 +18,7 @@ namespace MiniAppJuanTemplate.Models
         public string MainImage { get; set; }
         public List<ProductImage> ProductImages { get; set; }
         public int CategoryId { get; set; }
-        public Category Category { get; set; }
+        public Category? Category { get; set; }
         public List<ProductTag> ProductTags { get; set; }
         public List<ProductSize> ProductSizes { get; set; }
         [NotMapped]
@@ -29,5 +29,10 @@ namespace MiniAppJuanTemplate.Models
         [MaxSize(2 * 1024 * 1024)]
         [AllowedTypeAttribute("image/jpeg", "image/png")]
         public IFormFile[] Photos { get; set; }
+        [NotMapped]
+        [MaxSize(2 * 1024 * 1024)]
+        [AllowedTypeAttribute("image/jpeg", "image/png")]
+        public IFormFile MainPhoto{ get; set; }
+
     }
 }

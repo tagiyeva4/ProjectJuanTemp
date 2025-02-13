@@ -40,11 +40,19 @@ namespace MiniAppJuanTemplate.Data
                 }
                 if (entire.State == EntityState.Deleted)
                 {
-                    throw new Exception("You cannot delete..");
+                    entire.Property(p => p.DeletedDate).CurrentValue = DateTime.Now;
+                    entire.Property(p => p.IsDeleted).CurrentValue = true;
+                    entire.State = EntityState.Modified;
                 }
-                
             }
             return base.SaveChanges();
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Product>().HasQueryFilter(x => !x.IsDeleted);
         }
     }
 }
