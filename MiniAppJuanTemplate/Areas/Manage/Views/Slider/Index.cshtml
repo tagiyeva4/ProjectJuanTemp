@@ -1,0 +1,46 @@
+﻿@model List<Slider>
+@{
+    int count = 0;
+}
+<div class="container">
+    <div class="row">
+        <a asp-action="create" class="btn btn-outline-success">Create</a>
+    </div>
+    <div class="row">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Count</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Desc</th>
+                    <th scope="col">BtnLink</th>
+                    <th scope="col">BtnText</th>
+                    <th scope="col">Order</th>
+                    <th scope="col">Setting</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var slider in Model)
+                {
+                    <tr>
+                        <td>@(++count)</td>
+                        <td>
+                            <img src="~/assets/img/slider/@slider.Image" width="150" height="150" alt="sliderimage" />
+                        </td>
+                        <td>@slider.Title</td>
+                        <td>@slider.Description</td>
+                        <td>@slider.ButtonLink</td>
+                        <td>@slider.ButtonText</td>
+                        <td>@slider.Order</td>
+                        <td>
+                            <a class="btn btn-primary" asp-action="edit" asp-route-id="@slider.Id">Edit</a>
+                            <a class="btn btn-primary" asp-action="detail" asp-route-id="@slider.Id">Detail</a>
+                            <a class="btn btn-primary" asp-action="delete" asp-route-id="@slider.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

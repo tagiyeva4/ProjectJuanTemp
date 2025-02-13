@@ -150,6 +150,9 @@ namespace MiniAppJuanTemplate.Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsNew")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("IsStock")
                         .HasColumnType("bit");
 
@@ -160,9 +163,6 @@ namespace MiniAppJuanTemplate.Data.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("NewProduct")
-                        .HasColumnType("bit");
 
                     b.Property<int>("Rate")
                         .HasColumnType("int");

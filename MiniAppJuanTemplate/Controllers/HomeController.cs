@@ -21,6 +21,7 @@ namespace MiniAppJuanTemplate.Controllers
             homeVm.Brands=_juanAppDbContext.Brands.ToList();
             homeVm.Blogs=_juanAppDbContext.Blogs.ToList();
             homeVm.Products=_juanAppDbContext.Products.ToList();
+            homeVm.NewProducts=_juanAppDbContext.Products.Where(p=>p.IsNew==true).ToList();
             return View(homeVm);
         }
     }

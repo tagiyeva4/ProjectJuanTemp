@@ -12,8 +12,8 @@ using MiniAppJuanTemplate.Data;
 namespace MiniAppJuanTemplate.Data.Migrations
 {
     [DbContext(typeof(JuanAppDbContext))]
-    [Migration("20250212102841_ProductDetailsTables")]
-    partial class ProductDetailsTables
+    [Migration("20250212210449_productDetails")]
+    partial class productDetails
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -153,6 +153,9 @@ namespace MiniAppJuanTemplate.Data.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsNew")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("IsStock")
                         .HasColumnType("bit");
 
@@ -163,9 +166,6 @@ namespace MiniAppJuanTemplate.Data.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("NewProduct")
-                        .HasColumnType("bit");
 
                     b.Property<int>("Rate")
                         .HasColumnType("int");

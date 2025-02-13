@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Humanizer.Localisation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MiniAppJuanTemplate.Data;
@@ -114,6 +115,20 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             _juanAppDbContext.Sliders.Remove(existSlider);
             _juanAppDbContext.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public IActionResult Detail(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+           Slider slider = _juanAppDbContext.Sliders.FirstOrDefault(s => s.Id == id);
+            if (slider == null)
+            {
+                return NotFound();
+            }
+            return View(slider);
         }
     }
 }

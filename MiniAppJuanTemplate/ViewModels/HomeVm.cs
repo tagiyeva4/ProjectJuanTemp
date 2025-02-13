@@ -9,5 +9,7 @@ namespace MiniAppJuanTemplate.ViewModels
         public List<Brand> Brands { get; set; }
         public List<Blog> Blogs { get; set; }
         public List<Product> Products { get; set; }
+        public List<Product> NewProducts { get; set; }
+
     }
 }

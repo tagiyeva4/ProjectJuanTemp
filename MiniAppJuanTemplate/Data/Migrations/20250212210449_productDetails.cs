@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MiniAppJuanTemplate.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class ProductDetailsTables : Migration
+    public partial class productDetails : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -65,7 +65,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
                     CostPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     DiscountPercentege = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     IsStock = table.Column<bool>(type: "bit", nullable: false),
-                    NewProduct = table.Column<bool>(type: "bit", nullable: false),
+                    IsNew = table.Column<bool>(type: "bit", nullable: false),
                     Rate = table.Column<int>(type: "int", nullable: false),
                     MainImage = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CategoryId = table.Column<int>(type: "int", nullable: false),

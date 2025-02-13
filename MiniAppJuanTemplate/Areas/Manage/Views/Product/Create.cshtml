@@ -1,0 +1,92 @@
+﻿@model Product
+<div class="container">
+    <div class="row">
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" aria-describedby="emailHelp">
+                <span class="text-danger" asp-validation-for="Name"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description"></label>
+                <input asp-for="Description" class="form-control" aria-describedby="emailHelp">
+                <span class="text-danger" asp-validation-for="Description"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CostPrice"></label>
+                <input asp-for="CostPrice" class="form-control" aria-describedby="emailHelp">
+                <span class="text-danger" asp-validation-for="CostPrice"></span>
+            </div>
+            <div class="row">
+                <div class="form-group m-3">
+                    <label asp-for="IsNew"></label>
+                    <input asp-for="IsNew" class="form-control" aria-describedby="emailHelp">
+                    <span class="text-danger" asp-validation-for="IsNew"></span>
+                </div>
+                
+                <div class="form-group m-3">
+                    <label asp-for="IsStock"></label>
+                    <input asp-for="IsStock" class="form-control" aria-describedby="emailHelp">
+                    <span class="text-danger" asp-validation-for="IsStock"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rate"></label>
+                <input asp-for="Rate" class="form-control" aria-describedby="emailHelp">
+                <span class="text-danger" asp-validation-for="Rate"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Photos"></label>
+                <input asp-for="Photos" class="form-control" aria-describedby="emailHelp">
+                <span class="text-danger" asp-validation-for="Photos"></span>
+            </div>
+            <div class="form-group">
+            <label asp-for="MainImage"></label>
+            <input asp-for="MainImage" class="form-control" aria-describedby="emailHelp">
+            <span class="text-danger" asp-validation-for="MainImage"></span>
+            </div>
+            <div class="form-group">
+                <span>Select Author Name</span>
+                <select class="form-select" asp-for="CategoryId">
+                    <option disabled>Select Category</option>
+                    @foreach (var category in ViewBag.Category)
+                    {
+                        <option value="@category.Id">@category.Name</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <span>Select Tags</span>
+                <select class="form-select" asp-for="TagIds">
+                    <option disabled>Select Tags</option>
+                    @foreach (var tag in ViewBag.Tags)
+                    {
+                        <option value="@tag.Id">@tag.Name</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group">
+                <span>Select Sizes</span>
+                <select class="form-select" asp-for="SizeIds">
+                    <option disabled>Select Sizes</option>
+                    @foreach (var size in ViewBag.Sizes)
+                    {
+                        <option value="@size.Id">@size.Value</option>
+                    }
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+@section scripts {
+    @await Html.PartialAsync("_ValidationPartial")
+}
+
+
+@* <div class="form-group">
+    <label asp-for="Photo"></label>
+    <input asp-for="Photo" class="form-control" aria-describedby="emailHelp">
+    <img id="ImgPreview" style="display:none" width="150" height="150" src="" alt="" />
+    <span class="text-danger" asp-validation-for="Photo"></span>
+</div> *@

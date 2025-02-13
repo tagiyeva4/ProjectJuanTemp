@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MiniAppJuanTemplate.Models;
+using MiniAppJuanTemplate.Models.Common;
 
 namespace MiniAppJuanTemplate.Data
 {
@@ -20,6 +21,30 @@ namespace MiniAppJuanTemplate.Data
 		public DbSet<ProductSize> ProductSizes { get; set; }
 		public DbSet<Category> Category { get; set; }
 		public DbSet<Size> Sizes { get; set; }
-
-	}
+        public override int SaveChanges()
+        {
+            var entries = ChangeTracker.Entries<BaseAuditableEntity>();
+            foreach (var entire in entries)
+            {
+                if (entire.State == EntityState.Added)
+                {
+                    entire.Property(p => p.CreatedDate).CurrentValue = DateTime.Now;
+                }
+                if (entire.State == EntityState.Modified)
+                {
+                    entire.Property(p => p.UpdatedDate).CurrentValue = DateTime.Now;
+                }
+                if (entire.Property(p => p.IsDeleted).CurrentValue == true)
+                {
+                    entire.Property(p => p.DeletedDate).CurrentValue = DateTime.Now;
+                }
+                if (entire.State == EntityState.Deleted)
+                {
+                    throw new Exception("You cannot delete..");
+                }
+                
+            }
+            return base.SaveChanges();
+        }
+    }
 }
