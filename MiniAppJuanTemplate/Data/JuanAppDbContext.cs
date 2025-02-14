@@ -24,6 +24,7 @@ namespace MiniAppJuanTemplate.Data
 		public DbSet<Size> Sizes { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<SubscribeEmail> SubscribeEmails { get; set; }
+        public DbSet<ProductComment> ProductComments { get; set; }
         public override int SaveChanges()
         {
             var entries = ChangeTracker.Entries<BaseAuditableEntity>();

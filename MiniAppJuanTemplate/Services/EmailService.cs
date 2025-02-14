@@ -19,7 +19,7 @@ namespace MiniAppJuanTemplate.Services
             // send email
             using var smtp = new SmtpClient();
             smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-            smtp.Authenticate("tagizadeaysu002@gmail.com", "xonk mvaf kpah iagi");
+            smtp.Authenticate("aysuht@code.edu.az", "xonk mvaf kpah iagi");
             smtp.Send(email);
             smtp.Disconnect(true);
         }

@@ -81,13 +81,13 @@
                         {
                             <div class="product-item mb-50">
                                 <div class="product-thumb">
-                                    <a href="product-details.html">
+                                    <a asp-action="Detail" asp-controller="Product"  asp-route-id="@product.Id">
                                         <img src="~/assets/img/product/@product.MainImage" alt="" />
                                     </a>
                                 </div>
                                 <div class="product-content">
                                     <h5 class="product-name">
-                                        <a href="product-details.html">@product.Name</a>
+                                        <a asp-action="Detail" asp-controller="Product"  asp-route-id="@product.Id">@product.Name</a>
                                     </h5>
                                     <div class="price-box">
                                         @if (product.DiscountPercentege > 0)
@@ -142,7 +142,7 @@
             <div class="row no-gutters mtn-30">
                 <div class="col-md-6">
                     <div class="img-container mt-30">
-                        <a href="product-details.html">
+                        <a asp-action ="Detail" asp-controller="Product">
                             <img src="~/assets/img/banner/banner-1.jpg"
                                  alt="banner-image" />
                         </a>
@@ -154,7 +154,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="img-container mt-30">
-                        <a href="product-details.html">
+                        <a asp-action="Detail" asp-controller="Product">
                             <img src="~/assets/img/banner/banner-2.jpg"
                                  alt="banner-image" />
                         </a>
@@ -198,7 +198,7 @@
                             <div class="slide-item">
                                 <div class="pro-item-small mt-30">
                                     <div class="product-thumb">
-                                        <a href="product-details.html">
+                                        <a asp-action="Detail" asp-controller="Product"  asp-route-id="@newprod.Id">
                                             <img src="~/assets/img/product/@newprod.MainImage" alt="" />
                                         </a>
                                     </div>

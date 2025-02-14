@@ -1,12 +1,14 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using MailKit.Security;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
-
+using MimeKit;
 using MiniAppJuanTemplate.Data;
 using MiniAppJuanTemplate.Models;
 using MiniAppJuanTemplate.Services;
 using MiniAppJuanTemplate.ViewModels;
+using System.Net.Mail;
 
 namespace MiniAppJuanTemplate.Controllers
 {
@@ -71,7 +73,6 @@ namespace MiniAppJuanTemplate.Controllers
                 };
                 _juanAppDbContext.SubscribeEmails.Add(subscribeEmail);
             }
-
             //send email
             var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
             var url = Url.Action("VerifyEmail", "Account", new { email = user.Email, token }, Request.Scheme);

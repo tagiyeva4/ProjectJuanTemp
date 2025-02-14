@@ -33,6 +33,7 @@ namespace MiniAppJuanTemplate.Models
         [MaxSize(2 * 1024 * 1024)]
         [AllowedTypeAttribute("image/jpeg", "image/png")]
         public IFormFile? MainPhoto{ get; set; }
+        public List<ProductComment> ProductComments { get; set; }
 
     }
 }
