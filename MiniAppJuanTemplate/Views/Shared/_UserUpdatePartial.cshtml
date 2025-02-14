@@ -1,0 +1,56 @@
+﻿@model UserAccountUpdatVm
+
+@{
+    ViewData["Title"] = "_UserUpdatePartial";
+}
+
+<form method="post">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="single-input-item">
+                <label asp-for="UserName" class="required">User Name</label>
+                <input asp-for="UserName" placeholder="UserName" />
+                <span class="text-danger" asp-validation-for="UserName"></span>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="single-input-item">
+                <label asp-for="FullName" class="required">Last Name</label>
+                <input asp-for="FullName" placeholder="FullName" />
+                <span class="text-danger" asp-validation-for="FullName"></span>
+            </div>
+        </div>
+    </div>
+   
+    <div class="single-input-item">
+        <label asp-for="Email" class="required">Email Addres</label>
+        <input asp-for="Email" placeholder="Email Address" />
+        <span class="text-danger" asp-validation-for="Email"></span>
+    </div>
+    <fieldset>
+        <legend>Password change</legend>
+        <div class="single-input-item">
+            <label asp-for="CurrentPasword" class="required">Current Password</label>
+            <input asp-for="CurrentPasword"  placeholder="Current Password" />
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="single-input-item">
+                    <label asp-for="NewPassword" class="required">New Password</label>
+                    <input asp-for="NewPassword" placeholder="New Password" />
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="single-input-item">
+                    <label asp-for="ConfirmPassword" class="required">Confirm Password</label>
+                    <input asp-for="ConfirmPassword" placeholder="Confirm Password" />
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <div class="single-input-item">
+        <button type="submit" class="check-btn sqr-btn ">Save Changes</button>
+    </div>
+    <div class="col-12 text-danger" asp-validation-summary="ModelOnly">
+    </div>
+</form>

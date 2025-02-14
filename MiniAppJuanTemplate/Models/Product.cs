@@ -28,11 +28,11 @@ namespace MiniAppJuanTemplate.Models
         [NotMapped]
         [MaxSize(2 * 1024 * 1024)]
         [AllowedTypeAttribute("image/jpeg", "image/png")]
-        public IFormFile[] Photos { get; set; }
+        public IFormFile[]? Photos { get; set; }
         [NotMapped]
         [MaxSize(2 * 1024 * 1024)]
         [AllowedTypeAttribute("image/jpeg", "image/png")]
-        public IFormFile MainPhoto{ get; set; }
+        public IFormFile? MainPhoto{ get; set; }
 
     }
 }

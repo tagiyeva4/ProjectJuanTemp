@@ -9,7 +9,7 @@ using MiniAppJuanTemplate.Models;
 namespace MiniAppJuanTemplate.Areas.Manage.Controllers
 {
     [Area("Manage")]
-    //[Authorize(Roles = "admin,superadmin")]
+    [Authorize(Roles = "admin,superadmin")]
     public class TagController : Controller
     {
         private readonly JuanAppDbContext _juanAppDbContext;

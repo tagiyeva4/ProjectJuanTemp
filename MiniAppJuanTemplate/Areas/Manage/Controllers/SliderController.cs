@@ -9,7 +9,7 @@ using MiniAppJuanTemplate.Models;
 namespace MiniAppJuanTemplate.Areas.Manage.Controllers
 {
     [Area("Manage")]
-    //[Authorize(Roles = "admin,superadmin")]
+    [Authorize(Roles = "admin,superadmin")]
     public class SliderController : Controller
     {
         private readonly JuanAppDbContext _juanAppDbContext;
@@ -42,12 +42,12 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
                 return View();
             }
             var file = slider.Photo;
-          
-            //if (_juanAppDbContext.Sliders.Any(s => s.Title.Trim().ToLower() == slider.Title.Trim().ToLower()))
-            //{
-            //    ModelState.AddModelError("Title", "This slider already exist");
-            //    return View();
-            //}
+
+            if (_juanAppDbContext.Sliders.Any(s => s.Title.Trim().ToLower() == slider.Title.Trim().ToLower()))
+            {
+                ModelState.AddModelError("Title", "This slider already exist");
+                return View();
+            }
             slider.Image = file.SaveImage(_env.WebRootPath, "assets/img/slider");
            
            _juanAppDbContext.Sliders.Add(slider);
@@ -107,7 +107,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             {
                 return BadRequest();
             }
-            var deletedImagePath = Path.Combine(_env.WebRootPath, "assets/image/bg-images", existSlider.Image);
+            var deletedImagePath = Path.Combine(_env.WebRootPath, "assets/img/slider", existSlider.Image);
             if (!FileManager.DeleteFile(deletedImagePath))
             {
                 return BadRequest();

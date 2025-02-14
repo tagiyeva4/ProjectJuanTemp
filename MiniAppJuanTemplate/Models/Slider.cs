@@ -27,7 +27,7 @@ namespace MiniAppJuanTemplate.Models
         [NotMapped]
         [MaxSize(2 * 1024 * 1024)]
         [AllowedType("image/jpeg", "image/png")]
-        public IFormFile Photo { get; set; }
+        public IFormFile? Photo { get; set; }
 
     }
 }

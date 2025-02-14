@@ -1,10 +1,11 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using MiniAppJuanTemplate.Models;
 using MiniAppJuanTemplate.Models.Common;
 
 namespace MiniAppJuanTemplate.Data
 {
-	public class JuanAppDbContext : DbContext
+	public class JuanAppDbContext : IdentityDbContext<AppUser>
 	{
 		public JuanAppDbContext(DbContextOptions options) : base(options)
 		{
@@ -21,6 +22,8 @@ namespace MiniAppJuanTemplate.Data
 		public DbSet<ProductSize> ProductSizes { get; set; }
 		public DbSet<Category> Category { get; set; }
 		public DbSet<Size> Sizes { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<SubscribeEmail> SubscribeEmails { get; set; }
         public override int SaveChanges()
         {
             var entries = ChangeTracker.Entries<BaseAuditableEntity>();

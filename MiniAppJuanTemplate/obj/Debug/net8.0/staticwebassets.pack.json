@@ -2773,12 +2773,24 @@
       "PackagePath": "staticwebassets\\assets\\img\\paypal-card.jpg"
     },
     {
+      "Id": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\img\\product\\0e93151e-2583-4d39-8d23-b461dac2cd45.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\0e93151e-2583-4d39-8d23-b461dac2cd45.jpg"
+    },
+    {
       "Id": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\img\\product\\21725c69-fbab-4d98-9438-1b7bb69062de.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\21725c69-fbab-4d98-9438-1b7bb69062de.jpg"
     },
     {
+      "Id": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\img\\product\\6c688e2e-806f-4105-bd3e-d5541c2b746a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\6c688e2e-806f-4105-bd3e-d5541c2b746a.jpg"
+    },
+    {
       "Id": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\img\\product\\71e8c131-d6d8-43b0-b7b5-000f46e06fab.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\71e8c131-d6d8-43b0-b7b5-000f46e06fab.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\img\\product\\7d8e1441-a5cf-45d4-baef-7b311807cf7b.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\7d8e1441-a5cf-45d4-baef-7b311807cf7b.jpg"
     },
     {
       "Id": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\img\\product\\bb73a99f-6703-4f21-ae84-54d35ce96c0c.jpg",
@@ -2863,6 +2875,10 @@
     {
       "Id": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\img\\product\\product-details-img4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\product-details-img4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\img\\slider\\0196ac29-fadf-48c2-b1f2-21194b47bf2e.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\slider\\0196ac29-fadf-48c2-b1f2-21194b47bf2e.jpg"
     },
     {
       "Id": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\img\\slider\\slider-1.jpg",
@@ -3127,6 +3143,18 @@
     {
       "Id": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\templates\\emailconfirm.html",
+      "PackagePath": "staticwebassets\\templates\\emailconfirm.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\templates\\resetpassword.html",
+      "PackagePath": "staticwebassets\\templates\\resetpassword.html"
+    },
+    {
+      "Id": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\templates\\subscribeemail.html",
+      "PackagePath": "staticwebassets\\templates\\subscribeemail.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MiniAppJuanTemplate.Microsoft.AspNetCore.StaticWebAssets.props",

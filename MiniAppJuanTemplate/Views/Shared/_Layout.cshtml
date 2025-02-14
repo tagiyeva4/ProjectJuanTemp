@@ -178,7 +178,7 @@
                               <a href="#">column 04</a>
                               <ul>
                                 <li>
-                                  <a href="my-account.html">my-account</a>
+                                  <a asp-action="profile" asp-controller="account" >my-account</a>
                                 </li>
                                 <li>
                                   <a href="login-register.html"
@@ -340,9 +340,9 @@
                           <i class="ion-ios-gear-outline"></i>
                         </a>
                         <ul class="dropdown-list">
-                          <li><a href="login-register.html">login</a></li>
-                          <li><a href="login-register.html">register</a></li>
-                          <li><a href="my-account.html">my account</a></li>
+                     <li><a asp-action="Login" asp-controller="Account">login</a></li>
+                          <li><a asp-action="Register" asp-controller="Account">register</a></li>
+                          <li><a asp-action="Profile" asp-controller="Account" >my account</a></li>
                         </ul>
                       </li>
                       <li>
@@ -640,12 +640,11 @@
                     <a class="dropdown-item" href="my-account.html"
                       >my account</a
                     >
-                    <a class="dropdown-item" href="login-register.html">
-                      login</a
-                    >
-                    <a class="dropdown-item" href="login-register.html"
-                      >register</a
-                    >
+                    <a class="dropdown-item" asp-action="Login" asp-controller="Account">
+                      Login</a >
+                    <a class="dropdown-item" asp-action="Register" asp-controller="Account">
+                        Register
+                        </a>
                   </div>
                 </div>
               </li>
@@ -923,6 +922,7 @@
     <script src="~/assets/js/plugins.js"></script>
     <!--=== Active Js ===-->
     <script src="~/assets/js/active.js"></script>
+    @RenderSection("scripts", required: false)
   </body>
 
   <!-- Mirrored from demo.hasthemes.com/juan-preview-v1/juan/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 Mar 2021 22:36:53 GMT -->

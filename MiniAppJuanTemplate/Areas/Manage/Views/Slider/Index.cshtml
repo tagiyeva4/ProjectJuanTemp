@@ -13,10 +13,7 @@
                     <th scope="col">Count</th>
                     <th scope="col">Image</th>
                     <th scope="col">Title</th>
-                    <th scope="col">Desc</th>
-                    <th scope="col">BtnLink</th>
                     <th scope="col">BtnText</th>
-                    <th scope="col">Order</th>
                     <th scope="col">Setting</th>
                 </tr>
             </thead>
@@ -29,10 +26,7 @@
                             <img src="~/assets/img/slider/@slider.Image" width="150" height="150" alt="sliderimage" />
                         </td>
                         <td>@slider.Title</td>
-                        <td>@slider.Description</td>
-                        <td>@slider.ButtonLink</td>
                         <td>@slider.ButtonText</td>
-                        <td>@slider.Order</td>
                         <td>
                             <a class="btn btn-primary" asp-action="edit" asp-route-id="@slider.Id">Edit</a>
                             <a class="btn btn-primary" asp-action="detail" asp-route-id="@slider.Id">Detail</a>

@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace MiniAppJuanTemplate.Areas.Manage.Controllers
 {
     [Area("Manage")]
-    //[Authorize(Roles = "admin,superadmin")]
+    [Authorize(Roles = "admin,superadmin")]
     public class DashboardController : Controller
     {
        

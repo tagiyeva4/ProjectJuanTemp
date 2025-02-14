@@ -2,9 +2,12 @@
 <div class="container px-4">
     <div class="row gx-5">
         <div class="col">
-            <div class="p-3 border bg-light">Title: @Model.Title</div>
             <div class="p-3 border bg-light">Subtitle: @Model.TopPart</div>
+            <div class="p-3 border bg-light">Title: @Model.Title</div>
             <div class="p-3 border bg-light">Description: @Model.Description</div>
+            <div class="p-3 border bg-light">Btn Text: @Model.ButtonText</div>
+            <div class="p-3 border bg-light">Btn Link:@Model.ButtonLink</div>
+            <div class="p-3 border bg-light">Order:@Model.Order</div>
         </div>
         <div class="col">
             <a class="btn btn-outline-primary" asp-action="index">Go back</a>

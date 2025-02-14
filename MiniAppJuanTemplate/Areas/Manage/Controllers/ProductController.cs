@@ -5,21 +5,23 @@ using MiniAppJuanTemplate.Areas.Manage.ViewModels;
 using MiniAppJuanTemplate.Data;
 using MiniAppJuanTemplate.Helpers;
 using MiniAppJuanTemplate.Models;
+using MiniAppJuanTemplate.Services;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace MiniAppJuanTemplate.Areas.Manage.Controllers
 {
     [Area("Manage")]
-    //[Authorize(Roles = "admin,superadmin")]
+    [Authorize(Roles = "admin,superadmin")]
     public class ProductController : Controller
     {
         private readonly JuanAppDbContext _juanAppDbContext;
         private readonly IWebHostEnvironment _env;
-
-        public ProductController(JuanAppDbContext juanAppDbContext, IWebHostEnvironment env = null)
+        private readonly EmailService _emailService;
+        public ProductController(JuanAppDbContext juanAppDbContext, IWebHostEnvironment env, EmailService emailService)
         {
             _juanAppDbContext = juanAppDbContext;
             _env = env;
+            _emailService = emailService;
         }
 
         public IActionResult Index(int page = 1, int take = 2)
@@ -28,7 +30,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
                 .Include(p => p.Category)
                 .Include(p => p.ProductImages)
                 .Include(p => p.ProductTags).ThenInclude(t => t.Tag)
-                .Include(p => p.ProductSizes).ThenInclude(s => s.Size);
+                .Include(p => p.ProductSizes).ThenInclude(s => s.Size).OrderByDescending(p => p.Id);
             return View(PaginatedList<Product>.Create(query, take, page));
         }
         public IActionResult Create()
@@ -116,6 +118,18 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
 
             _juanAppDbContext.Products.Add(product);
             _juanAppDbContext.SaveChanges();
+
+            string? url = Url.Action("Detail", "Shop", new { id = product.Id }, Request.Protocol);
+            using StreamReader reader = new StreamReader("wwwroot/templates/subscribeemail");
+            var body = reader.ReadToEnd();
+
+            var subscribers = _juanAppDbContext.SubscribeEmails.ToList();
+
+            foreach (var subscriber in subscribers)
+            {
+                _emailService.SendEmail(subscriber.Email, "New Product", body);
+            }
+
             return RedirectToAction("Index");
         }
         public IActionResult Detail(int? id)
@@ -227,7 +241,27 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             {
                 _juanAppDbContext.ProductTags.Remove(prodTag);
             }
+            List<ProductSize> productSizes = new List<ProductSize>();
+            foreach (var sizeId in product.SizeIds.ToList())
+            {
+                if (!_juanAppDbContext.Sizes.Any(s => s.Id == sizeId))
+                {
+                    ModelState.AddModelError("SizeIds", "There is no size in this id...");
+                    return View();
+                }
+                ProductSize productSize = new ProductSize();
+                productSize.Id = sizeId;
+                productSize.Product = existProduct;
+                productSizes.Add(productSize);
+            }
+            var existProductSizes = _juanAppDbContext.ProductSizes.Where(pt => pt.ProductId == existProduct.Id).ToList();
+            foreach (var productSize in existProductSizes)
+            {
+                _juanAppDbContext.ProductSizes.Remove(productSize);
+            }
+
             existProduct.ProductTags = productTags;
+            existProduct.ProductSizes = productSizes;
             existProduct.Name = product.Name;
             existProduct.Description = product.Description;
             existProduct.CategoryId = product.CategoryId;
@@ -237,6 +271,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             existProduct.CostPrice = product.CostPrice;
             existProduct.DiscountPercentege = product.DiscountPercentege;
             existProduct.Rate = product.Rate;
+            existProduct.ProductImages = product.ProductImages;
             _juanAppDbContext.SaveChanges();
             return RedirectToAction("Index");
         }
