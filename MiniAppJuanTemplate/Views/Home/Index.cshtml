@@ -204,7 +204,7 @@
                                     </div>
                                     <div class="pro-small-content">
                                         <h6 class="product-name">
-                                            <a href="product-details.html">@newprod.Name</a>
+                                            <a asp-action="Detail" asp-controller="Product" asp-route-id="@newprod.Id">@newprod.Name</a>
                                         </h6>
                                         <div class="price-box">
                                             @if (newprod.DiscountPercentege > 0)
@@ -273,13 +273,13 @@
                         {
                             <div class="blog-post-item">
                                 <div class="blog-thumb">
-                                    <a href="blog-details.html">
+                                    <a asp-action="Detail" asp-controller="Blog" asp-route-id="@blog.Id">
                                         <img src="~/assets/img/blog/@blog.Image" alt="blog thumb" />
                                     </a>
                                 </div>
                                 <div class="blog-content">
                                     <h5 class="blog-title">
-                                        <a href="blog-details.html">
+                                        <a asp-action="Detail" asp-controller="Blog" asp-route-id="@blog.Id">
                                            @blog.Title
                                         </a>
                                     </h5>
@@ -287,7 +287,7 @@
                                         <li><span>By: </span>@blog.WriteBy,</li>
                                         <li><span>On: </span>@blog.WriteOn.ToString("dd.MM.yyyy")</li>
                                     </ul>
-                                    <a href="blog-details.html" class="read-more">@blog.ButtonText</a>
+                                    <a asp-action="Detail" asp-controller="Blog" asp-route-id="@blog.Id" class="read-more">@blog.ButtonText</a>
                                 </div>
                             </div>
                         }
