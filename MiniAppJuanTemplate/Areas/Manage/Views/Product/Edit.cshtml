@@ -1,4 +1,5 @@
-﻿@model Product
+﻿@using MiniAppJuanTemplate.Areas.Manage.ViewModels
+@model ProductUpdateViewModel
 <div class="container">
     <div class="row">
         <form method="post" enctype="multipart/form-data">
@@ -41,12 +42,16 @@
                 <span class="text-danger" asp-validation-for="Rate"></span>
             </div>
             <div class="form-group">
+                <label asp-for="MainPhoto"></label>
+                <input asp-for="MainPhoto" class="form-control" aria-describedby="emailHelp">
+
                 <label asp-for="Photos"></label>
                 <input asp-for="Photos" class="form-control" aria-describedby="emailHelp">
+
                 <span>Old Images</span>
                 @foreach (var image in Model.ProductImages)
                 {
-                    <img width="150" height="150" src="~/assets/image/products/@image.Name" alt="Alternate Text" />
+                    <img width="150" height="150" src="~/assets/img/products/@image.Name" alt="Alternate Text" />
                 }
                 <div class="bookImagesPreview">
                 </div>
@@ -62,7 +67,15 @@
 
                     @foreach (Tag tag in ViewBag.Tags)
                     {
-                        <option value="@tag.Id">@tag.Name</option>
+                        @if (Model.TagIds.Contains(tag.Id))
+                        {
+                            <option selected value="@tag.Id">@tag.Name</option>
+                        }
+                        else
+                        {
+                            <option value="@tag.Id">@tag.Name</option>
+                        }
+
                     }
                 </select>
             </div>
@@ -71,10 +84,18 @@
 
                     @foreach (Size size in ViewBag.Sizes)
                     {
-                        <option value="@size.Id">@size.Value</option>
+                        @if (Model.SizeIds.Contains(size.Id))
+                        {
+                            <option selected value="@size.Id">@size.Value</option>
+                        }
+                        else
+                        {
+                            <option value="@size.Id">@size.Value</option>
+                        }
                     }
                 </select>
             </div>
+            <input type="hidden" asp-for="@Model.Id" />
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>

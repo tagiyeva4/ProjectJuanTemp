@@ -55,7 +55,6 @@ namespace MiniAppJuanTemplate.Controllers
                 case "Price(Low<High)":
                     query = query.OrderBy(b => b.DiscountPercentege > 0 ? b.CostPrice - ((b.CostPrice * b.DiscountPercentege) / 100) : b.CostPrice);
                     break;
-
                 default:
                     query = query.OrderBy(b => b.Name);
                     break;

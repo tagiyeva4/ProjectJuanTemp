@@ -3157,6 +3157,10 @@
       "PackagePath": "staticwebassets\\templates\\subscribeemail.html"
     },
     {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MiniAppJuanTemplate.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MiniAppJuanTemplate.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

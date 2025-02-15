@@ -122,7 +122,7 @@ namespace MiniAppJuanTemplate.Controllers
             var productvm = getProductDetailVm(productComment.ProductId, user.Id);
             productvm.ProductComment = productComment;
 
-            if (!ModelState.IsValid) return View("Detail", productvm);
+            // if (!ModelState.IsValid) return View("Detail", productvm);
             productComment.AppUserId = user.Id;
            _context.ProductComments.Add(productComment);
             await _context.SaveChangesAsync();

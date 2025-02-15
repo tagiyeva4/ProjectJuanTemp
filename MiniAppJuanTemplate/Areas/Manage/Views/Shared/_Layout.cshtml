@@ -7,6 +7,7 @@
     <title>Modernize Free</title>
     <link rel="shortcut icon" type="image/png" href="~/adminmanage/assets/images/logos/favicon.png" />
     <link rel="stylesheet" href="~/adminmanage/assets/css/styles.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -33,33 +34,33 @@
                             <span class="hide-menu">Home</span>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link" asp-action="Index" asp-controller="Dashboard" aria-expanded="false">
+                            <a class="sidebar-link" asp-area="manage" asp-action="Index" asp-controller="Dashboard" aria-expanded="false">
                                 <span>
                                     <i class="ti ti-layout-dashboard"></i>
                                 </span>
                                 <span>Dashboard</span>
                             </a>
-                            <a class="sidebar-link" asp-action="Index" asp-controller="Slider" aria-expanded="false">
+                            <a class="sidebar-link" asp-area="manage" asp-action="Index" asp-controller="Slider" aria-expanded="false">
                                 <span>
-                                    <i class="ti ti-layout-dashboard"></i>
+                                    <i class="fa-solid fa-sliders"></i>
                                 </span>
                                 <span>Slider</span>
                             </a>
-                            <a class="sidebar-link" asp-action="Index" asp-controller="Tag" aria-expanded="false">
+                            <a class="sidebar-link" asp-area="manage" asp-action="Index" asp-controller="Tag" aria-expanded="false">
                                 <span>
-                                    <i class="ti ti-layout-dashboard"></i>
+                                    <i class="fa-solid fa-tag"></i>
                                 </span>
                                 <span>Tag</span>
                             </a>
-                            <a class="sidebar-link" asp-action="Index" asp-controller="Category" aria-expanded="false">
+                            <a class="sidebar-link" asp-area="manage" asp-action="Index" asp-controller="Category" aria-expanded="false">
                                 <span>
-                                    <i class="ti ti-layout-dashboard"></i>
+                                    <i class="fa-solid fa-swatchbook"></i>
                                 </span>
                                 <span>Category</span>
                             </a>
-                            <a class="sidebar-link" asp-action="Index" asp-controller="Product" aria-expanded="false">
+                            <a class="sidebar-link" asp-area="manage" asp-action="Index" asp-controller="Product" aria-expanded="false">
                                 <span>
-                                    <i class="ti ti-layout-dashboard"></i>
+                                    <i class="fa-brands fa-product-hunt"></i>
                                 </span>
                                 <span>Product</span>
                             </a>
