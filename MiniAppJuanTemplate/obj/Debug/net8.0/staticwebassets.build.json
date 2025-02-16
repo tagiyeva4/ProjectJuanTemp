@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QJ8vRkyljTL4rS9js+SsGaXtpjH3oaOnR1rOK+4Zv9w=",
+  "Hash": "qWkAPK+JqQnQUjosU9DHT6fVIfhZg3DZ465oxJZIq7Y=",
   "Source": "MiniAppJuanTemplate",
   "BasePath": "_content/MiniAppJuanTemplate",
   "Mode": "Default",
@@ -15261,6 +15261,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\active.js"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\js\\main.js",
+      "SourceId": "MiniAppJuanTemplate",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\",
+      "BasePath": "_content/MiniAppJuanTemplate",
+      "RelativePath": "assets/js/main#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hf2qph475w",
+      "Integrity": "zSuNb0oL8FFfufMD+esVHIGd9VXkN4WKhwd2gSqvkvg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\js\\main.js"
     },
     {
       "Identity": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\js\\modernizr-2.8.3.min.js",
@@ -76116,6 +76137,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-bfTn4mOa5Jxv47RJrBy6wR7IfJhgxyWcOc5yzwvCa4s="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/main.hf2qph475w.js",
+      "AssetFile": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\js\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zSuNb0oL8FFfufMD+esVHIGd9VXkN4WKhwd2gSqvkvg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 07:04:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hf2qph475w"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/js/main.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zSuNb0oL8FFfufMD+esVHIGd9VXkN4WKhwd2gSqvkvg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/js/main.js",
+      "AssetFile": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\js\\main.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zSuNb0oL8FFfufMD+esVHIGd9VXkN4WKhwd2gSqvkvg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 07:04:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zSuNb0oL8FFfufMD+esVHIGd9VXkN4WKhwd2gSqvkvg="
         }
       ]
     },

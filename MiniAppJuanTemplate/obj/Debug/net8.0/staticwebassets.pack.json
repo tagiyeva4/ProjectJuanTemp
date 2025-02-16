@@ -2905,6 +2905,10 @@
       "PackagePath": "staticwebassets\\assets\\js\\active.js"
     },
     {
+      "Id": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
       "Id": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\js\\modernizr-2.8.3.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\modernizr-2.8.3.min.js"
     },

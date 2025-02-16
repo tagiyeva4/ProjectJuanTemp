@@ -243,6 +243,12 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
                     existProduct.ProductImages.Add(productImage);
                 }
             }
+            
+            if (productUpdateViewModel.MainPhoto != null)
+            {
+                string mainImageName = productUpdateViewModel.MainPhoto.SaveImage(_env.WebRootPath, "assets/img/product");
+                existProduct.MainImage = mainImageName;
+            }
             List<ProductTag> productTags = new List<ProductTag>();
             foreach (var tagId in productUpdateViewModel.TagIds.ToList())
             {
@@ -291,8 +297,6 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             existProduct.CostPrice = productUpdateViewModel.CostPrice;
             existProduct.DiscountPercentege = productUpdateViewModel.DiscountPercentege;
             existProduct.Rate = productUpdateViewModel.Rate;
-            existProduct.ProductImages = productUpdateViewModel.ProductImages;
-            existProduct.MainImage = productUpdateViewModel.MainImage;
             _juanAppDbContext.SaveChanges();
             return RedirectToAction("Index");
         }

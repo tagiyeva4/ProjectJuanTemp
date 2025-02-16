@@ -2,6 +2,7 @@
 @inject LayoutServices layoutService
 @{
     var settings = layoutService.GetSettings();
+    var basketItems = layoutService.GetUserBasketItems();
 }
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
@@ -295,7 +296,7 @@
                                         <li>
                                             <a href="#" class="minicart-btn">
                                                 <i class="ion-bag"></i>
-                                                <div class="notification">2</div>
+                                                <div class="notification"></div>
                                             </a>
                                         </li>
                                     </ul>
@@ -720,9 +721,9 @@
                     <i class="ion-android-close"></i>
                 </div>
                 <div class="minicart-content-box">
-                    <div class="minicart-item-wrapper">
+                    <div class="minicart-item-wrapper basketModal">
                         <ul>
-                            <li class="minicart-item">
+                           @*  <li class="minicart-item">
                                 <div class="minicart-thumb">
                                     <a href="product-details.html">
                                         <img src="~/assets/img/cart/cart-1.jpg" alt="product" />
@@ -740,30 +741,13 @@
                                 <button class="minicart-remove">
                                     <i class="ion-android-close"></i>
                                 </button>
-                            </li>
-                            <li class="minicart-item">
-                                <div class="minicart-thumb">
-                                    <a href="product-details.html">
-                                        <img src="~/assets/img/cart/cart-2.jpg" alt="product" />
-                                    </a>
-                                </div>
-                                <div class="minicart-content">
-                                    <h3 class="product-name">
-                                        <a href="product-details.html">Jasmine flowers white for all flower lovers</a>
-                                    </h3>
-                                    <p>
-                                        <span class="cart-quantity">1 <strong>&times;</strong></span>
-                                        <span class="cart-price">$80.00</span>
-                                    </p>
-                                </div>
-                                <button class="minicart-remove">
-                                    <i class="ion-android-close"></i>
-                                </button>
-                            </li>
+                            </li> *@
+                           
+                            @await Html.PartialAsync("_BasketPartial", basketItems)
                         </ul>
                     </div>
 
-                    <div class="minicart-pricing-box">
+                @*     <div class="minicart-pricing-box">
                         <ul>
                             <li>
                                 <span>sub-total</span>
@@ -782,12 +766,9 @@
                                 <span><strong>$370.00</strong></span>
                             </li>
                         </ul>
-                    </div>
+                    </div> *@
 
-                    <div class="minicart-button">
-                        <a href="cart.html"><i class="fa fa-shopping-cart"></i> view cart</a>
-                        <a href="cart.html"><i class="fa fa-share"></i> checkout</a>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -800,6 +781,7 @@
     <!-- Scroll to Top End -->
     <!--=======================Javascript============================-->
     <!--=== All Vendor Js ===-->
+    <script src="~/assets/js/main.js"></script>
     <script src="~/assets/js/vendor.js"></script>
     <!--=== All Plugins Js ===-->
     <script src="~/assets/js/plugins.js"></script>

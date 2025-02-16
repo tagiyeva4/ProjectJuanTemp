@@ -14,36 +14,40 @@
             <div class="minicart-content-box">
                 <div class="minicart-item-wrapper">
                     <ul>
-                        @foreach(var product in Model)
+                        @if (Model.Count > 0)
                         {
-                            <li class="minicart-item">
-                                <div class="minicart-thumb">
-                                    <a asp-action="Detail" asp-controller="Product" asp-route-id="@product.Id">
-                                        <img src="~/assets/img/product/@product.MainImage" alt="product" />
-                                    </a>
-                                </div>
-                                <div class="minicart-content">
-                                    <h3 class="product-name">
-                                        <a asp-action="Detail" asp-controller="Product" asp-route-id="@product.Id">@product.Name</a>
-                                    </h3>
-                                    <p>
-                                        <span class="cart-quantity">1 <strong>&times;</strong></span>
-                                        <span class="cart-price">$@(product.Price)</span>
-                                    </p>
-                                </div>
-                                <button class="minicart-remove">
-                                    <i class="ion-android-close"></i>
-                                </button>
-                            </li>
+                            @foreach (var product in Model)
+                            {
+                                <li class="minicart-item">
+                                    <div class="minicart-thumb">
+                                        <a asp-action="Detail" asp-controller="Product" asp-route-id="@product.Id">
+                                            <img src="~/assets/img/product/@product.MainImage" alt="product" />
+                                        </a>
+                                    </div>
+                                    <div class="minicart-content">
+                                        <h3 class="product-name">
+                                            <a asp-action="Detail" asp-controller="Product" asp-route-id="@product.Id">@product.Name</a>
+                                        </h3>
+                                        <p>
+                                            <span class="cart-quantity">@product.Count <strong>&times;</strong></span>
+                                            <span class="cart-price">$@(product.Price)</span>
+                                        </p>
+                                    </div>
+                                    <button class="minicart-remove">
+                                        <i class="ion-android-close"></i>
+                                    </button>
+                                </li>
+                            }
+
                         }
                     </ul>
                 </div>
 
-              @*   <div class="minicart-pricing-box">
+                <div class="minicart-pricing-box">
                     <ul>
                         <li>
                             <span>sub-total</span>
-                            <span><strong>$</strong></span>
+                            <span><strong>$@Model.Sum(p => p.Count * p.Price)</strong></span>
                         </li>
                         <li>
                             <span>Eco Tax (00)</span>
@@ -55,10 +59,10 @@
                         </li>
                         <li class="total">
                             <span>total</span>
-                            <span><strong>$370.00</strong></span>
+                            <span><strong>$@Model.Sum(b => b.Count * b.Price)</strong></span>
                         </li>
                     </ul>
-                </div> *@
+                </div>
 
                 <div class="minicart-button">
                     <a asp-action="Index" asp-controller="Basket"><i class="fa fa-shopping-cart"></i> view cart</a>

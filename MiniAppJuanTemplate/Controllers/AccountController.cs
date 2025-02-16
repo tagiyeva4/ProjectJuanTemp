@@ -72,6 +72,7 @@ namespace MiniAppJuanTemplate.Controllers
                     Email = userRegisterVm.Email,
                 };
                 _juanAppDbContext.SubscribeEmails.Add(subscribeEmail);
+                _juanAppDbContext.SaveChanges();
             }
             //send email
             var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);

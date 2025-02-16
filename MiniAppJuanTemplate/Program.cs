@@ -13,6 +13,7 @@ builder.Services.AddDbContext<JuanAppDbContext>(options =>
 {
 	options.UseSqlServer(config["ConnectionStrings:DefaultConnection"]);
 });
+builder.Services.AddHttpContextAccessor();
 
 builder.Services.AddScoped<LayoutServices>();
 builder.Services.AddScoped<EmailService>();
