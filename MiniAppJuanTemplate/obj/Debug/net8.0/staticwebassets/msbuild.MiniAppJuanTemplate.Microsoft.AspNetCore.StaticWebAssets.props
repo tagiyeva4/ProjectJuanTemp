@@ -12564,6 +12564,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\7d8e1441-a5cf-45d4-baef-7b311807cf7b.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\af6f6930-5627-4adb-90e2-53b23039f773.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MiniAppJuanTemplate</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MiniAppJuanTemplate</BasePath>
+      <RelativePath>assets/img/product/af6f6930-5627-4adb-90e2-53b23039f773.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>o3l3csfo6x</Fingerprint>
+      <Integrity>bAbuLxoNPpfiW0S+zUfOkQlGsn2E6HeVufkEagJlZl0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\af6f6930-5627-4adb-90e2-53b23039f773.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\bb73a99f-6703-4f21-ae84-54d35ce96c0c.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>MiniAppJuanTemplate</SourceId>

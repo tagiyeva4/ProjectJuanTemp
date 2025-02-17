@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MiniAppJuanTemplate.Data;
@@ -92,5 +93,11 @@ namespace MiniAppJuanTemplate.Controllers
             }
             return View(basketItemVms);
         }
+        //[Authorize(Roles = "member")]
+        //public IActionResult DeleteItem(int? id)
+        //{
+        //    if (id == null) return NotFound();
+           
+        //}
     }
 }

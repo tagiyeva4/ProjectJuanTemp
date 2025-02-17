@@ -116,100 +116,51 @@
                     <div class="checkout-billing-details-wrap">
                         <h4 class="checkout-title">Billing Details</h4>
                         <div class="billing-form-wrap">
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="single-input-item">
-                                            <label for="f_name" class="required">First Name</label>
-                                            <input type="text" id="f_name" placeholder="First Name" required />
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="single-input-item">
-                                            <label for="l_name" class="required">Last Name</label>
-                                            <input type="text" id="l_name" placeholder="Last Name" required />
-                                        </div>
-                                    </div>
+                            <form method="post" id="checkoutForm">
+                                <div class="single-input-item">
+                                    <label asp-for="@Model.OrderVm.CompanyName">Company Name</label>
+                                    <input asp-for="@Model.OrderVm.CompanyName" placeholder="Company Name" />
+                                    <span class="text-danger" asp-validation-for="@Model.OrderVm.CompanyName"></span>
                                 </div>
 
                                 <div class="single-input-item">
-                                    <label for="email" class="required">Email Address</label>
-                                    <input type="email" id="email" placeholder="Email Address" required />
+                                    <label asp-for="@Model.OrderVm.StreetAddress" class="required mt-20">Street address</label>
+                                    <input asp-for="@Model.OrderVm.StreetAddress" placeholder="Street address" required />
+                                    <span class="text-danger" asp-validation-for="@Model.OrderVm.StreetAddress"></span>
                                 </div>
 
                                 <div class="single-input-item">
-                                    <label for="com-name">Company Name</label>
-                                    <input type="text" id="com-name" placeholder="Company Name" />
+                                    <label asp-for="@Model.OrderVm.Country" class="required mt-20">Country</label>
+                                    <input asp-for="@Model.OrderVm.Country" placeholder="Country" required />
+                                    <span class="text-danger" asp-validation-for="@Model.OrderVm.Country"></span>
+                                </div>
+
+                                
+                                <div class="single-input-item">
+                                    <label asp-for="@Model.OrderVm.TownCity" class="required">Town / City</label>
+                                    <input asp-for ="@Model.OrderVm.TownCity" placeholder="Town / City" required />
+                                    <span class="text-danger" asp-validation-for="@Model.OrderVm.TownCity"></span>
                                 </div>
 
                                 <div class="single-input-item">
-                                    <label for="country" class="required">Country</label>
-                                    <select name="country nice-select" id="country">
-                                        <option value="Afghanistan">Afghanistan</option>
-                                        <option value="Albania">Albania</option>
-                                        <option value="Algeria">Algeria</option>
-                                        <option value="Armenia">Armenia</option>
-                                        <option value="Bangladesh">Bangladesh</option>
-                                        <option value="India">India</option>
-                                        <option value="Pakistan">Pakistan</option>
-                                        <option value="England">England</option>
-                                        <option value="London">London</option>
-                                        <option value="London">London</option>
-                                        <option value="Chaina">China</option>
-                                    </select>
+                                    <label asp-for="@Model.OrderVm.State">State / Divition</label>
+                                    <input asp-for="@Model.OrderVm.State" placeholder="State / Divition" />
+                                    <span class="text-danger" asp-validation-for="@Model.OrderVm.State"></span>
                                 </div>
 
                                 <div class="single-input-item">
-                                    <label for="street-address" class="required mt-20">Street address</label>
-                                    <input type="text" id="street-address" placeholder="Street address Line 1" required />
+                                    <label asp-for="@Model.OrderVm.ZipCode" class="required">Postcode / ZIP</label>
+                                    <input asp-for="@Model.OrderVm.ZipCode" placeholder="Postcode / ZIP" required />
+                                    <span class="text-danger" asp-validation-for="@Model.OrderVm.ZipCode"></span>
                                 </div>
 
                                 <div class="single-input-item">
-                                    <input type="text" placeholder="Street address Line 2 (Optional)" />
+                                    <label asp-for="@Model.OrderVm.PhoneNumber">Phone</label>
+                                    <input asp-for="@Model.OrderVm.PhoneNumber" placeholder="Phone" />
+                                    <span class="text-danger" asp-validation-for="@Model.OrderVm.PhoneNumber"></span>
                                 </div>
 
-                                <div class="single-input-item">
-                                    <label for="town" class="required">Town / City</label>
-                                    <input type="text" id="town" placeholder="Town / City" required />
-                                </div>
 
-                                <div class="single-input-item">
-                                    <label for="state">State / Divition</label>
-                                    <input type="text" id="state" placeholder="State / Divition" />
-                                </div>
-
-                                <div class="single-input-item">
-                                    <label for="postcode" class="required">Postcode / ZIP</label>
-                                    <input type="text" id="postcode" placeholder="Postcode / ZIP" required />
-                                </div>
-
-                                <div class="single-input-item">
-                                    <label for="phone">Phone</label>
-                                    <input type="text" id="phone" placeholder="Phone" />
-                                </div>
-
-                                <div class="checkout-box-wrap">
-                                    <div class="single-input-item">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="create_pwd">
-                                            <label class="custom-control-label" for="create_pwd">
-                                                Create an
-                                                account?
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="account-create single-form-row">
-                                        <p>
-                                            Create an account by entering the information below. If you are a
-                                            returning customer please login at the top of the page.
-                                        </p>
-                                        <div class="single-input-item">
-                                            <label for="pwd" class="required">Account Password</label>
-                                            <input type="password" id="pwd" placeholder="Account Password" required />
-                                        </div>
-                                    </div>
-                                </div>
 
                                 <div class="checkout-box-wrap">
                                     <div class="single-input-item">
@@ -287,10 +238,6 @@
                                     </div>
                                 </div>
 
-                                <div class="single-input-item">
-                                    <label for="ordernote">Order Note</label>
-                                    <textarea name="ordernote" id="ordernote" cols="30" rows="3" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
-                                </div>
                             </form>
                         </div>
                     </div>
@@ -311,65 +258,36 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>
-                                                <a href="product-details.html">Suscipit Vestibulum <strong> × 1</strong></a>
-                                            </td>
-                                            <td>$165.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="product-details.html">Ami Vestibulum suscipit <strong> × 4</strong></a>
-                                            </td>
-                                            <td>$165.00</td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="product-details.html">Vestibulum suscipit <strong> × 2</strong></a>
-                                            </td>
-                                            <td>$165.00</td>
-                                        </tr>
+                                       
+                                            @foreach (var item in Model.CheckoutItemVms)
+                                            {
+                                            <tr>
+                                                <td>
+                                                    <span class="left">@item.ProductName X 0@(item.Count)</span>
+                                                </td>
+                                                <td>
+                                                    <span class="right">$@item.TotalItemPrice</span>
+                                                </td>
+                                            </tr>
+                                            }
+                                        
                                     </tbody>
                                     <tfoot>
                                         <tr>
                                             <td>Sub Total</td>
-                                            <td><strong>$400</strong></td>
+                                            <td><strong>$@(Model.CheckoutItemVms.Sum(b => b.TotalItemPrice))</strong></td>
                                         </tr>
-                                        <tr>
-                                            <td>Shipping</td>
-                                            <td class="d-flex justify-content-center">
-                                                <ul class="shipping-type">
-                                                    <li>
-                                                        <div class="custom-control custom-radio">
-                                                            <input type="radio" id="flatrate" name="shipping" class="custom-control-input" checked />
-                                                            <label class="custom-control-label" for="flatrate">
-                                                                Flat
-                                                                Rate: $70.00
-                                                            </label>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="custom-control custom-radio">
-                                                            <input type="radio" id="freeshipping" name="shipping" class="custom-control-input" />
-                                                            <label class="custom-control-label" for="freeshipping">
-                                                                Free
-                                                                Shipping
-                                                            </label>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
+                                        
                                         <tr>
                                             <td>Total Amount</td>
-                                            <td><strong>$470</strong></td>
+                                            <td><strong>$@(Model.CheckoutItemVms.Sum(b => b.TotalItemPrice))</strong></td>
                                         </tr>
                                     </tfoot>
                                 </table>
                             </div>
                             <!-- Order Payment Method -->
                             <div class="order-payment-method">
-                                <div class="single-payment-method show">
+                               @*  <div class="single-payment-method show">
                                     <div class="payment-method-name">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" id="cashon" name="paymentmethod" value="cash" class="custom-control-input" checked />
@@ -379,9 +297,9 @@
                                     <div class="payment-method-details" data-method="cash">
                                         <p>Pay with cash upon delivery.</p>
                                     </div>
-                                </div>
+                                </div> *@
                                 <div class="single-payment-method">
-                                    <div class="payment-method-name">
+                                   @*  <div class="payment-method-name">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" id="directbank" name="paymentmethod" value="bank" class="custom-control-input" />
                                             <label class="custom-control-label" for="directbank">
@@ -396,10 +314,10 @@
                                             ID as the payment reference. Your order will not be shipped until the
                                             funds have cleared in our account..
                                         </p>
-                                    </div>
+                                    </div> *@
                                 </div>
                                 <div class="single-payment-method">
-                                    <div class="payment-method-name">
+                                    @* <div class="payment-method-name">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" id="checkpayment" name="paymentmethod" value="check" class="custom-control-input" />
                                             <label class="custom-control-label" for="checkpayment">
@@ -413,31 +331,31 @@
                                             Please send a check to Store Name, Store Street, Store Town, Store State
                                             / County, Store Postcode.
                                         </p>
-                                    </div>
+                                    </div> *@
                                 </div>
                                 <div class="single-payment-method">
-                                    <div class="payment-method-name">
+                                  @*   <div class="payment-method-name">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" id="paypalpayment" name="paymentmethod" value="paypal" class="custom-control-input" />
-                                            <label class="custom-control-label" for="paypalpayment">Paypal <img src="assets/img/paypal-card.jpg" class="img-fluid paypal-card" alt="Paypal" /></label>
+                                            <label class="custom-control-label" for="paypalpayment">Paypal <img src="~/assets/img/paypal-card.jpg" class="img-fluid paypal-card" alt="Paypal" /></label>
                                         </div>
-                                    </div>
-                                    <div class="payment-method-details" data-method="paypal">
+                                    </div> *@
+                                  @*   <div class="payment-method-details" data-method="paypal">
                                         <p>
                                             Pay via PayPal; you can pay with your credit card if you don’t have a
                                             PayPal account.
                                         </p>
-                                    </div>
+                                    </div> *@
                                 </div>
                                 <div class="summary-footer-area">
-                                    <div class="custom-control custom-checkbox mb-20">
+                                   @*  <div class="custom-control custom-checkbox mb-20">
                                         <input type="checkbox" class="custom-control-input" id="terms" required />
                                         <label class="custom-control-label" for="terms">
                                             I have read and agree to
                                             the website <a href="index.html">terms and conditions.</a>
                                         </label>
-                                    </div>
-                                    <button type="submit" class="btn btn-sqr">Place Order</button>
+                                    </div> *@
+                                    <button type="submit" form="checkoutForm" class="btn btn-sqr">Place Order</button>
                                 </div>
                             </div>
                         </div>
@@ -449,3 +367,7 @@
     <!-- checkout main wrapper end -->
 </main>
 <!-- main wrapper end -->
+@section scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js" integrity="sha512-xq+Vm8jC94ynOikewaQXMEkJIOBp7iArs3IhFWSWdRT3Pq8wFz46p+ZDFAR7kHnSFf+zUv52B3prRYnbDRdgog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+}

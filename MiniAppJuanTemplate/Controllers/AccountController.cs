@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 using MimeKit;
 using MiniAppJuanTemplate.Data;
@@ -160,10 +161,10 @@ namespace MiniAppJuanTemplate.Controllers
                 Email = user.Email,
                 FullName = user.UserName,
             };
-            //userprofileVm.Orders = _pustokAppDbContext.Orders
-            //    .Include(o => o.AppUser)
-            //    .Where(o => o.AppUserId == user.Id)
-            //    .ToList();
+            userAccount.Orders = _juanAppDbContext.Orders
+                .Include(o => o.AppUser)
+                .Where(o => o.AppUserId == user.Id)
+                .ToList();
             return View(userAccount);
         }
         [HttpPost]

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qWkAPK+JqQnQUjosU9DHT6fVIfhZg3DZ465oxJZIq7Y=",
+  "Hash": "WJ3cDy9IvBKjymLqYO+vHQTJPhWpO0EIHMfBAJxrcSM=",
   "Source": "MiniAppJuanTemplate",
   "BasePath": "_content/MiniAppJuanTemplate",
   "Mode": "Default",
@@ -14673,6 +14673,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\product\\7d8e1441-a5cf-45d4-baef-7b311807cf7b.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\img\\product\\af6f6930-5627-4adb-90e2-53b23039f773.jpg",
+      "SourceId": "MiniAppJuanTemplate",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\",
+      "BasePath": "_content/MiniAppJuanTemplate",
+      "RelativePath": "assets/img/product/af6f6930-5627-4adb-90e2-53b23039f773#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o3l3csfo6x",
+      "Integrity": "bAbuLxoNPpfiW0S+zUfOkQlGsn2E6HeVufkEagJlZl0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\product\\af6f6930-5627-4adb-90e2-53b23039f773.jpg"
     },
     {
       "Identity": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\img\\product\\bb73a99f-6703-4f21-ae84-54d35ce96c0c.jpg",
@@ -73845,6 +73866,88 @@
       ]
     },
     {
+      "Route": "assets/img/product/af6f6930-5627-4adb-90e2-53b23039f773.jpg",
+      "AssetFile": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\img\\product\\af6f6930-5627-4adb-90e2-53b23039f773.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10982"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAbuLxoNPpfiW0S+zUfOkQlGsn2E6HeVufkEagJlZl0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 21:26:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAbuLxoNPpfiW0S+zUfOkQlGsn2E6HeVufkEagJlZl0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/product/af6f6930-5627-4adb-90e2-53b23039f773.o3l3csfo6x.jpg",
+      "AssetFile": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\img\\product\\af6f6930-5627-4adb-90e2-53b23039f773.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10982"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bAbuLxoNPpfiW0S+zUfOkQlGsn2E6HeVufkEagJlZl0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Feb 2025 21:26:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o3l3csfo6x"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/product/af6f6930-5627-4adb-90e2-53b23039f773.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bAbuLxoNPpfiW0S+zUfOkQlGsn2E6HeVufkEagJlZl0="
+        }
+      ]
+    },
+    {
       "Route": "assets/img/product/bb73a99f-6703-4f21-ae84-54d35ce96c0c.91s51wj4ha.jpg",
       "AssetFile": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\img\\product\\bb73a99f-6703-4f21-ae84-54d35ce96c0c.jpg",
       "Selectors": [],
@@ -76163,7 +76266,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 07:04:47 GMT"
+          "Value": "Mon, 17 Feb 2025 10:26:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -76208,7 +76311,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Feb 2025 07:04:47 GMT"
+          "Value": "Mon, 17 Feb 2025 10:26:57 GMT"
         },
         {
           "Name": "Cache-Control",

@@ -52,8 +52,8 @@
                                                     <input type="text" value="3" />
                                                 </div>
                                             </td>
-                                            <td class="pro-subtotal"><span>$@item.Count*@item.Count</span></td>
-                                            <td class="pro-remove"><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                                            <td class="pro-subtotal"><span>$@item.Count*@item.Price</span></td>
+                                            <td class="pro-remove"><a asp-action=""><i class="fa fa-trash-o"></i></a></td>
                                         </tr>
                                     }
                                 </tbody>
@@ -96,7 +96,7 @@
                                     </table>
                                 </div>
                             </div>
-                            <a asp-action="CheckOut" asp-controller="Basket" class="btn d-block">Proceed Checkout</a>
+                            <a asp-action="CheckOut" asp-controller="Order" class="btn d-block">Proceed Checkout</a>
                         </div>
                     </div>
                 </div>

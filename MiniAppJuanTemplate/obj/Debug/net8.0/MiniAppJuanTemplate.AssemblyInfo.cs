@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniAppJuanTemplate")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13ca0129f9d7bfcfb9ecfcaefb77190ba639079b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+623438614916d59fd97126f33dca7323fc0dfcd1")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniAppJuanTemplate")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniAppJuanTemplate")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

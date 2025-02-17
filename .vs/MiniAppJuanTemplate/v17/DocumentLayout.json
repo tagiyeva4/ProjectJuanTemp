@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\views\\order\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\views\\order\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\areas\\manage\\controllers\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\areas\\manage\\controllers\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\viewmodels\\checkoutvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\viewmodels\\checkoutvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\views\\shared\\_basketpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\views\\shared\\_basketpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\viewmodels\\checkoutitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\viewmodels\\checkoutitemvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\areas\\manage\\services\\implements\\tagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\areas\\manage\\services\\implements\\tagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\viewmodels\\ordervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\viewmodels\\ordervm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\areas\\manage\\services\\interfaces\\itagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\areas\\manage\\services\\interfaces\\itagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\views\\shared\\_orderitemspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\views\\shared\\_orderitemspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,98 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CheckOut.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Order\\CheckOut.cshtml",
-              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Views\\Order\\CheckOut.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Order\\CheckOut.cshtml",
-              "RelativeToolTip": "MiniAppJuanTemplate\\Views\\Order\\CheckOut.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMIBAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-16T21:49:16.426Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CheckoutItemVm.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\ViewModels\\CheckoutItemVm.cs",
-              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\ViewModels\\CheckoutItemVm.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\ViewModels\\CheckoutItemVm.cs",
-              "RelativeToolTip": "MiniAppJuanTemplate\\ViewModels\\CheckoutItemVm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
+              "Title": "TagService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Services\\Implements\\TagService.cs",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Areas\\Manage\\Services\\Implements\\TagService.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Services\\Implements\\TagService.cs",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Areas\\Manage\\Services\\Implements\\TagService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T19:41:37.384Z",
+              "WhenOpened": "2025-02-17T13:06:22.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "OrderVm.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\ViewModels\\OrderVm.cs",
-              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\ViewModels\\OrderVm.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\ViewModels\\OrderVm.cs",
-              "RelativeToolTip": "MiniAppJuanTemplate\\ViewModels\\OrderVm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TagController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\TagController.cs",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\TagController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\TagController.cs",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\TagController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC0AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T19:36:16.655Z",
+              "WhenOpened": "2025-02-17T12:38:36.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CheckOutVm.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\ViewModels\\CheckOutVm.cs",
-              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\ViewModels\\CheckOutVm.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\ViewModels\\CheckOutVm.cs",
-              "RelativeToolTip": "MiniAppJuanTemplate\\ViewModels\\CheckOutVm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T19:33:30.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_OrderItemsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Shared\\_OrderItemsPartial.cshtml",
-              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Views\\Shared\\_OrderItemsPartial.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Shared\\_OrderItemsPartial.cshtml",
-              "RelativeToolTip": "MiniAppJuanTemplate\\Views\\Shared\\_OrderItemsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAuAAAAAAAAAA==",
+              "Title": "_BasketPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Shared\\_BasketPartial.cshtml",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Views\\Shared\\_BasketPartial.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Shared\\_BasketPartial.cshtml",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Views\\Shared\\_BasketPartial.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAADAAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-16T19:21:32.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "MiniAppJuanTemplate\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAN0CAAAAAAAAAAAAAA8DAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-16T19:13:35.669Z",
+              "WhenOpened": "2025-02-17T11:46:05.978Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "MiniAppJuanTemplate\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAUwCsAAAAfAAAAAAAAAA==",
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAowJQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T18:49:36.717Z",
+              "WhenOpened": "2025-02-17T11:34:02.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Views\\Account\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Views\\Account\\Profile.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAADcAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-17T11:34:10.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ITagService.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Services\\Interfaces\\ITagService.cs",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Areas\\Manage\\Services\\Interfaces\\ITagService.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Services\\Interfaces\\ITagService.cs",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Areas\\Manage\\Services\\Interfaces\\ITagService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T12:40:10.381Z",
               "EditorCaption": ""
             }
           ]
