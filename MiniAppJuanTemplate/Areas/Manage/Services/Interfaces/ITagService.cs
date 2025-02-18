@@ -1,15 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+﻿using MiniAppJuanTemplate.Helpers;
 using MiniAppJuanTemplate.Models;
 
 namespace MiniAppJuanTemplate.Areas.Manage.Services.Interfaces
 {
     public interface ITagService
     {
-        void Create(Tag tag, ModelStateDictionary ModelState);
-        void Update(int? id);
-        void Delete(int? id);
-        void Detail(int? id);
-        List<Product> GetAllProducts();
-        Product GetProductById();
+
+        PaginatedList<Tag> GetPaginatedTags(int page, int take);
+        Tag GetTagById(int id);
+        bool CreateTag(Tag tag, out string errorMessage);
+        bool UpdateTag(Tag tag, out string errorMessage);
+        bool DeleteTag(int id);
+
+
     }
 }

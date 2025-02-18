@@ -89,9 +89,9 @@
                                                                 <td>
                                                                     @if (order.OrderStatus == OrderStatus.Pending)
                                                                     {
-                                                                        <a asp-action="cancel" asp-controller="Order" asp-route-orderId="@order.Id" class="btn">Cancel</a>
+                                                                        <a asp-action="Cancel" asp-controller="Order" asp-route-orderId="@order.Id" class="btn">Cancel</a>
                                                                     }
-                                                                <a asp-action="getorderitems" asp-controller="Order" asp-route-orderId="@order.Id" class="btn getorderitems" class="btn ">View</a>
+                                                                    <a asp-action="GetOrderItems" asp-controller="Order" asp-route-orderId="@order.Id" class="btn getorderitems">View</a>
                                                                 </td>
                                                             </tr>
                                                             orderCount++;

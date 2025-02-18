@@ -1,0 +1,14 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "_SearchPartial";
+}
+
+@foreach (var product in Model)
+{
+    <li class="list-group-item">
+        <a asp-action="Detail" asp-controller="Product" asp-route-id="@product.Id">
+            @product.Name
+        </a>
+    </li>
+}
+

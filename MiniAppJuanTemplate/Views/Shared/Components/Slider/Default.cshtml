@@ -1,0 +1,17 @@
+﻿@model List<Slider>
+@foreach (var slider in Model)
+{
+    <div class="hero-single-slide">
+        <div class="hero-slider-item bg-img"
+             data-bg="assets/img/slider/@slider.Image">
+            <div class="hero-slider-content slide-1">
+                <h5 class="slide-subtitle">@slider.TopPart</h5>
+                <h2 class="slide-title">@slider.Title</h2>
+                <p class="slide-desc">
+                    @slider.Description
+                </p>
+                <a href="@slider.ButtonLink" class="btn btn-hero">@slider.ButtonText</a>
+            </div>
+        </div>
+    </div>
+}

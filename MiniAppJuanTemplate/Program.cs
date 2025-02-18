@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using MiniAppJuanTemplate.Areas.Manage.Services.Implements;
+using MiniAppJuanTemplate.Areas.Manage.Services.Interfaces;
 using MiniAppJuanTemplate.Data;
 using MiniAppJuanTemplate.Models;
 using MiniAppJuanTemplate.Services;
@@ -15,6 +17,7 @@ builder.Services.AddDbContext<JuanAppDbContext>(options =>
 });
 builder.Services.AddHttpContextAccessor();
 
+builder.Services.AddScoped<ITagService, TagService>();
 builder.Services.AddScoped<LayoutServices>();
 builder.Services.AddScoped<EmailService>();
 builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>

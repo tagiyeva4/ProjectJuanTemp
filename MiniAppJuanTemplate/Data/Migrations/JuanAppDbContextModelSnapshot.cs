@@ -258,7 +258,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("BasketItems");
+                    b.ToTable("BasketItems", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.Blog", b =>
@@ -294,7 +294,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Blogs");
+                    b.ToTable("Blogs", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.Brand", b =>
@@ -311,7 +311,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Brands");
+                    b.ToTable("Brands", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.Category", b =>
@@ -328,7 +328,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("Category", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.HomeService", b =>
@@ -356,7 +356,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("HomeServices");
+                    b.ToTable("HomeServices", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.Order", b =>
@@ -413,7 +413,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasIndex("AppUserId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.OrderItem", b =>
@@ -439,7 +439,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OrderItems");
+                    b.ToTable("OrderItems", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.Product", b =>
@@ -486,7 +486,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Rate")
+                    b.Property<int>("Rating")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdatedDate")
@@ -496,7 +496,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.ProductComment", b =>
@@ -523,7 +523,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Rate")
+                    b.Property<int>("Rating")
                         .HasColumnType("int");
 
                     b.Property<int>("Status")
@@ -542,7 +542,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductComments");
+                    b.ToTable("ProductComments", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.ProductImage", b =>
@@ -564,7 +564,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductImages");
+                    b.ToTable("ProductImages", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.ProductSize", b =>
@@ -587,7 +587,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasIndex("SizeId");
 
-                    b.ToTable("ProductSizes");
+                    b.ToTable("ProductSizes", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.ProductTag", b =>
@@ -610,7 +610,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasIndex("TagId");
 
-                    b.ToTable("ProductTags");
+                    b.ToTable("ProductTags", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.Settings", b =>
@@ -624,7 +624,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasKey("Key");
 
-                    b.ToTable("Settings");
+                    b.ToTable("Settings", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.Size", b =>
@@ -641,7 +641,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Sizes");
+                    b.ToTable("Sizes", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.Slider", b =>
@@ -685,7 +685,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Sliders");
+                    b.ToTable("Sliders", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.SubscribeEmail", b =>
@@ -702,7 +702,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("SubscribeEmails");
+                    b.ToTable("SubscribeEmails", (string)null);
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.Tag", b =>
@@ -731,7 +731,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Tags");
+                    b.ToTable("Tags", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

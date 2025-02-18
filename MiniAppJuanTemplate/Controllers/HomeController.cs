@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using MiniAppJuanTemplate.Data;
 using MiniAppJuanTemplate.ViewModels;
 
@@ -11,6 +12,26 @@ namespace MiniAppJuanTemplate.Controllers
         public HomeController(JuanAppDbContext juanAppDbContext)
         {
             _juanAppDbContext = juanAppDbContext;
+        }
+
+        public IActionResult Search(string search)
+        {
+            if (search is not null)
+            {
+                var datas = _juanAppDbContext.Products
+                    .Include(p => p.Category)
+                    .Include(p => p.ProductTags)
+                    .ThenInclude(pt => pt.Tag)
+                    .Where(x => x.Name.Contains(search)
+                    || x.Category.Name.Contains(search)
+                    || x.ProductTags.Any(pt => pt.Tag.Name.Contains(search)))
+                    .ToList();
+                return PartialView("_SearchPartial", datas);
+            }
+            else
+            {
+                return NotFound();
+            }
         }
 
         public IActionResult Index()

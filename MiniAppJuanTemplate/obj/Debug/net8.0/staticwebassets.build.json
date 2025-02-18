@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WJ3cDy9IvBKjymLqYO+vHQTJPhWpO0EIHMfBAJxrcSM=",
+  "Hash": "drjRlDweAylSpkWkq32HmwP9+Uyp4naHKSMODd/8pjQ=",
   "Source": "MiniAppJuanTemplate",
   "BasePath": "_content/MiniAppJuanTemplate",
   "Mode": "Default",
@@ -15298,8 +15298,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "hf2qph475w",
-      "Integrity": "zSuNb0oL8FFfufMD+esVHIGd9VXkN4WKhwd2gSqvkvg=",
+      "Fingerprint": "8yxiosykja",
+      "Integrity": "oFv5Nu4zvX/xQ7tM1tLBZiiM9yfTBVBoOO/dkrGrnV4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\main.js"
@@ -76244,7 +76244,7 @@
       ]
     },
     {
-      "Route": "assets/js/main.hf2qph475w.js",
+      "Route": "assets/js/main.8yxiosykja.js",
       "AssetFile": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\wwwroot\\assets\\js\\main.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -76254,7 +76254,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "337"
+          "Value": "2516"
         },
         {
           "Name": "Content-Type",
@@ -76262,11 +76262,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zSuNb0oL8FFfufMD+esVHIGd9VXkN4WKhwd2gSqvkvg=\""
+          "Value": "\"oFv5Nu4zvX/xQ7tM1tLBZiiM9yfTBVBoOO/dkrGrnV4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 10:26:57 GMT"
+          "Value": "Tue, 18 Feb 2025 12:43:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -76276,7 +76276,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hf2qph475w"
+          "Value": "8yxiosykja"
         },
         {
           "Name": "label",
@@ -76284,7 +76284,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-zSuNb0oL8FFfufMD+esVHIGd9VXkN4WKhwd2gSqvkvg="
+          "Value": "sha256-oFv5Nu4zvX/xQ7tM1tLBZiiM9yfTBVBoOO/dkrGrnV4="
         }
       ]
     },
@@ -76299,7 +76299,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "337"
+          "Value": "2516"
         },
         {
           "Name": "Content-Type",
@@ -76307,11 +76307,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zSuNb0oL8FFfufMD+esVHIGd9VXkN4WKhwd2gSqvkvg=\""
+          "Value": "\"oFv5Nu4zvX/xQ7tM1tLBZiiM9yfTBVBoOO/dkrGrnV4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Feb 2025 10:26:57 GMT"
+          "Value": "Tue, 18 Feb 2025 12:43:01 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -76321,7 +76321,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zSuNb0oL8FFfufMD+esVHIGd9VXkN4WKhwd2gSqvkvg="
+          "Value": "sha256-oFv5Nu4zvX/xQ7tM1tLBZiiM9yfTBVBoOO/dkrGrnV4="
         }
       ]
     },

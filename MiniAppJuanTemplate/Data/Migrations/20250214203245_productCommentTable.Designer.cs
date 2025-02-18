@@ -368,7 +368,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Rate")
+                    b.Property<int>("Rating")
                         .HasColumnType("int");
 
                     b.Property<DateTime?>("UpdatedDate")
@@ -405,7 +405,7 @@ namespace MiniAppJuanTemplate.Data.Migrations
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Rate")
+                    b.Property<int>("Rating")
                         .HasColumnType("int");
 
                     b.Property<int>("Status")

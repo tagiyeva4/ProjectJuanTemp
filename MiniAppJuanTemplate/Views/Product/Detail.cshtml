@@ -139,7 +139,8 @@
                                                                     Availability: <span style="color:red" class="list-value">Out Of Stock</span>
                                                                 </li>
                                                             }
-                                                            <li>Tags: 
+                                                            <li>
+                                                                Tags:
                                                                 @(Html.Raw(string.Join(",", Model.Product.ProductTags.Select(x => $"<a href=#>{x.Tag.Name}</a>").ToList())))
                                                             </li>
                                                         </ul>
@@ -167,10 +168,10 @@
                                             </table>
                                         </div>
                                         <div class="tab-pane fade" id="tab_three">
-                                            <form method="post" asp-action="AddComment" id="commentForm" class="review-form">
+                                            <form method="post" asp-action="AddComment"  class="review-form">
                                                 <h5>@(Model.TotalCommentsCount) review for <span>@Model.Product.Name</span></h5>
                                                 <div class="total-reviews">
-                                                    @foreach(var comment in Model.Product.ProductComments)
+                                                    @foreach (var comment in Model.Product.ProductComments)
                                                     {
                                                         <div class="rev-avatar">
                                                             <img src="~/assets/img/about/avatar.jpg" alt="">
@@ -189,7 +190,7 @@
                                                         </div>
                                                     }
                                                 </div>
-                                               
+
                                                 @if (!Model.HasCommentUser)
                                                 {
                                                     <div class="form-group row">
@@ -203,18 +204,33 @@
                                                     </div>
                                                     <div class="form-group row">
                                                         <div class="col">
-                                                            <label class="col-form-label"><span class="text-danger">*</span> Rating</label>
+                                                       @*      <label class="col-form-label"><span class="text-danger">*</span> Rating</label>
                                                             &nbsp;&nbsp;&nbsp; Bad&nbsp;
-                                                            <input type="radio" value="1" name="rating" asp-for="@Model.ProductComment.Rate">
+                                                            <input type="radio" value="5" asp-for="ProductComment.Rate">
                                                             &nbsp;
-                                                            <input type="radio" value="2" name="rating" asp-for="@Model.ProductComment.Rate">
+                                                            <input type="radio" value="4" asp-for="ProductComment.Rate">
                                                             &nbsp;
-                                                            <input type="radio" value="3" name="rating" asp-for="@Model.ProductComment.Rate">
+                                                            <input type="radio" value="3" asp-for="ProductComment.Rate">
                                                             &nbsp;
-                                                            <input type="radio" value="4" name="rating" asp-for="@Model.ProductComment.Rate">
+                                                            <input type="radio" value="2" asp-for="ProductComment.Rate">
                                                             &nbsp;
-                                                            <input type="radio" value="5" name="rating" asp-for="@Model.ProductComment.Rate" checked>
-                                                            &nbsp;Good
+                                                            <input type="radio" value="1" asp-for="ProductComment.Rate">
+                                                            &nbsp;Good *@
+
+
+                                                            <label for="rating">Your Rating:</label><br>
+                                                            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span><br>
+                                                            <input type="radio" id="star1" asp-for="ProductComment.Rate" value="1">
+                                                            <label for="star1">1 star</label><br>
+                                                            <input type="radio" id="star2" asp-for="ProductComment.Rate"  value="2">
+                                                            <label for="star2">2 stars</label><br>
+                                                            <input type="radio" id="star3" asp-for="ProductComment.Rate" value="3">
+                                                            <label for="star3">3 stars</label><br>
+                                                            <input type="radio" id="star4" asp-for="ProductComment.Rate" value="4">
+                                                            <label for="star4">4 stars</label><br>
+                                                            <input type="radio" id="star5" asp-for="ProductComment.Rate" value="5">
+                                                            <label for="star5">5 stars</label><br><br>
+
                                                         </div>
                                                     </div>
                                                     <div class="buttons">
@@ -245,7 +261,7 @@
                                 <div class="col-12">
                                     <div class="product-carousel-4 mbn-50 slick-row-15 slick-arrow-style">
                                         <!-- product single item start -->
-                                       @await Html.PartialAsync("_ProductPartial",Model.RelatedProducts)
+                                        @await Html.PartialAsync("_ProductPartial", Model.RelatedProducts)
                                         <!-- product single item start -->
                                     </div>
                                 </div>

@@ -103,5 +103,6 @@ namespace MiniAppJuanTemplate.Controllers
             HttpContext.Response.Cookies.Delete("basket");
             return RedirectToAction("Profile", "Account", new { tab = "orders" });
         }
+
     }
 }
