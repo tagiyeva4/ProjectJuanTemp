@@ -261,3 +261,4 @@ C:\Users\Asus\source\repos\MiniAppJuanTemplate\MiniAppJuanTemplate\bin\Debug\net
 C:\Users\Asus\source\repos\MiniAppJuanTemplate\MiniAppJuanTemplate\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\Asus\source\repos\MiniAppJuanTemplate\MiniAppJuanTemplate\obj\Debug\net8.0\staticwebassets\msbuild.MiniAppJuanTemplate.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 C:\Users\Asus\source\repos\MiniAppJuanTemplate\MiniAppJuanTemplate\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Asus\source\repos\MiniAppJuanTemplate\MiniAppJuanTemplate\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll

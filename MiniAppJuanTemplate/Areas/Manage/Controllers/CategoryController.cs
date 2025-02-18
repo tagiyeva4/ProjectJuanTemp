@@ -21,7 +21,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
 
         public IActionResult Index(int page = 1, int take = 2)
         {
-            var query = _juanAppDbContext.Category.Include(c => c.Products);
+            var query = _juanAppDbContext.Category.Include(c => c.Products).OrderByDescending(c=>c.Id);
             PaginatedList<Category> paginatedlist = PaginatedList<Category>.Create(query, take, page);
             return View(paginatedlist);
         }

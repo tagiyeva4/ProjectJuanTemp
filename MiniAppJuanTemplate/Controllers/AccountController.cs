@@ -1,4 +1,5 @@
 ﻿using MailKit.Security;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -10,6 +11,8 @@ using MiniAppJuanTemplate.Models;
 using MiniAppJuanTemplate.Services;
 using MiniAppJuanTemplate.ViewModels;
 using System.Net.Mail;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace MiniAppJuanTemplate.Controllers
 {
@@ -284,5 +287,43 @@ namespace MiniAppJuanTemplate.Controllers
             }
             return RedirectToAction("Login");
         }
+    
+        public IActionResult GoogleLogin()
+        {
+            var redirectUrl = Url.Action("GoogleResponse", "Account");
+            var prosperities = _signInManager.ConfigureExternalAuthenticationProperties(GoogleDefaults.AuthenticationScheme, redirectUrl);
+            return new ChallengeResult(GoogleDefaults.AuthenticationScheme, prosperities);
+        }
+        public async Task<IActionResult> GoogleResponse()
+        {
+            var result = await _signInManager.GetExternalLoginInfoAsync();
+
+            var email=result.Principal.FindFirstValue(ClaimTypes.Email);
+            if (email == null) return View();
+            var user =await _userManager.FindByEmailAsync(email);
+            if (user == null)
+            {
+                user = new AppUser
+                {
+                    Email = email,
+                    UserName = email,
+                    FullName = result.Principal.FindFirstValue(ClaimTypes.Name)
+                };
+               await  _userManager.CreateAsync(user);
+               await _userManager.AddToRoleAsync(user, "member");
+              await  _signInManager.SignInAsync(user, true);
+            }
+            return RedirectToAction("Index", "Home");
+        }
+
+
+
+
+
+
+
+
+
+
     }
 }

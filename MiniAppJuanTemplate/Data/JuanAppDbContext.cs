@@ -60,6 +60,7 @@ namespace MiniAppJuanTemplate.Data
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Product>().HasQueryFilter(x => !x.IsDeleted);
+            modelBuilder.Entity<Tag>().HasQueryFilter(x => !x.IsDeleted);
         }
     }
 }

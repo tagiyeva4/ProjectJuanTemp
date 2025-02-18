@@ -192,7 +192,6 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             {
                 return NotFound();
             }
-
             return RedirectToAction("Index");
         }
 
