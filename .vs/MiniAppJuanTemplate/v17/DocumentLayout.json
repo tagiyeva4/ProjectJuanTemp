@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\areas\\manage\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\areas\\manage\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\areas\\manage\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\areas\\manage\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SaleController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\SaleController.cs",
-              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\SaleController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\SaleController.cs",
-              "RelativeToolTip": "MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\SaleController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Models\\Product.cs",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Models\\Product.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wBAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-19T09:52:06.395Z",
+              "WhenOpened": "2025-02-19T10:46:08.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAwBAAAAAAAAAADwv5kBAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T10:45:52.065Z",
               "EditorCaption": ""
             }
           ]

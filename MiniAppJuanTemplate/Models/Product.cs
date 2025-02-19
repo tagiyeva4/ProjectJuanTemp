@@ -14,7 +14,7 @@ namespace MiniAppJuanTemplate.Models
         public decimal DiscountPercentege { get; set; }
         public bool IsStock { get; set; }
         public bool IsNew {  get; set; }
-        //public int Rate {  get; set; }
+        public int Rate {  get; set; }
         public string MainImage { get; set; }
         public List<ProductImage> ProductImages { get; set; }
         public int CategoryId { get; set; }

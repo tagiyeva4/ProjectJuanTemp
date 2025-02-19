@@ -71,7 +71,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
                 CostPrice = viewModel.CostPrice,
                 IsStock = viewModel.IsStock,
                 IsNew = viewModel.IsNew,
-                //Rate = viewModel.Rate,
+                Rate = viewModel.Rate,
                 ProductImages = [],
                 ProductSizes = [],
                 ProductTags = []
@@ -200,7 +200,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
                 DiscountPercentege = product.DiscountPercentege,
                 IsStock = product.IsStock,
                 IsNew = product.IsNew,
-                //Rate=product.Rate,
+                Rate=product.Rate,
                 CategoryId = product.CategoryId,
                 TagIds = product.TagIds,
                 SizeIds = product.SizeIds,
@@ -300,7 +300,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             existProduct.IsNew = productUpdateViewModel.IsNew;
             existProduct.CostPrice = productUpdateViewModel.CostPrice;
             existProduct.DiscountPercentege = productUpdateViewModel.DiscountPercentege;
-            //existProduct.Rate = productUpdateViewModel.Rate;
+            existProduct.Rate = productUpdateViewModel.Rate;
             _juanAppDbContext.SaveChanges();
             return RedirectToAction("Index");
         }
