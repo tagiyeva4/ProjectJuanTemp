@@ -1,0 +1,30 @@
+﻿@model List<Order>
+@{
+    int count = 1;
+}
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Müştəri Adı</th>
+            <th>Məhsul</th>
+            <th>Miqdar</th>
+            <th>Qiymət</th>
+            <th>Ödəniş Statusu</th>
+            <th>Sifariş Tarixi</th>
+            <th>Detallar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var order in Model)
+        {
+            <tr>
+                <td>@count++</td>
+                <td>@order.AppUser.UserName</td>
+                <td>@order.CreatedDate</td>
+                <td>@order.OrderItems.Count</td>
+            </tr>
+        }
+
+    </tbody>
+</table>

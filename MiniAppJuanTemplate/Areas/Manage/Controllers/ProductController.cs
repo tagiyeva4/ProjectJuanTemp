@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using MiniAppJuanTemplate.Areas.Manage.ViewModels;
 using MiniAppJuanTemplate.Data;
 using MiniAppJuanTemplate.Helpers;
@@ -70,7 +71,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
                 CostPrice = viewModel.CostPrice,
                 IsStock = viewModel.IsStock,
                 IsNew = viewModel.IsNew,
-                Rate = viewModel.Rate,
+                //Rate = viewModel.Rate,
                 ProductImages = [],
                 ProductSizes = [],
                 ProductTags = []
@@ -122,6 +123,9 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             string? url = Url.Action("Detail", "Shop", new { id = product.Id }, Request.Protocol);
             using StreamReader reader = new StreamReader("wwwroot/templates/subscribeemail");
             var body = reader.ReadToEnd();
+           
+
+            body = body.Replace("{{PRODUCT_LINK}}", url);
 
             var subscribers = _juanAppDbContext.SubscribeEmails.ToList();
 
@@ -190,20 +194,20 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             ProductUpdateViewModel productUpdateViewModel = new()
             {
                 Id = product.Id,
-                Name=product.Name,
-                Description=product.Description,
-                CostPrice=product.CostPrice,
-                DiscountPercentege=product.DiscountPercentege,
-                IsStock=product.IsStock,
-                IsNew=product.IsNew,
-                Rate=product.Rate,
-                CategoryId=product.CategoryId,
-                TagIds=product.TagIds,
-                SizeIds=product.SizeIds,
-                Photos=product.Photos,
-                MainPhoto=product.MainPhoto,
-                MainImage=product.MainImage,
-                ProductImages=product.ProductImages
+                Name = product.Name,
+                Description = product.Description,
+                CostPrice = product.CostPrice,
+                DiscountPercentege = product.DiscountPercentege,
+                IsStock = product.IsStock,
+                IsNew = product.IsNew,
+                //Rate=product.Rate,
+                CategoryId = product.CategoryId,
+                TagIds = product.TagIds,
+                SizeIds = product.SizeIds,
+                Photos = product.Photos,
+                MainPhoto = product.MainPhoto,
+                MainImage = product.MainImage,
+                ProductImages = product.ProductImages
 
             };
             return View(productUpdateViewModel);
@@ -243,7 +247,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
                     existProduct.ProductImages.Add(productImage);
                 }
             }
-            
+
             if (productUpdateViewModel.MainPhoto != null)
             {
                 string mainImageName = productUpdateViewModel.MainPhoto.SaveImage(_env.WebRootPath, "assets/img/product");
@@ -296,7 +300,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             existProduct.IsNew = productUpdateViewModel.IsNew;
             existProduct.CostPrice = productUpdateViewModel.CostPrice;
             existProduct.DiscountPercentege = productUpdateViewModel.DiscountPercentege;
-            existProduct.Rate = productUpdateViewModel.Rate;
+            //existProduct.Rate = productUpdateViewModel.Rate;
             _juanAppDbContext.SaveChanges();
             return RedirectToAction("Index");
         }

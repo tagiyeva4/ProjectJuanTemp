@@ -9480,17 +9480,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-NFSKYXtZZMO5syatmyyeyu65wNcZQdLMmdBu\u002BxpwCSE="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"10346"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022NFSKYXtZZMO5syatmyyeyu65wNcZQdLMmdBu\u002BxpwCSE=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Feb 2025 21:42:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/MiniAppJuanTemplate/templates/subscribeemail.7ijc1x60o2.html">
+    <StaticWebAssetEndpoint Include="_content/MiniAppJuanTemplate/templates/subscribeemail.26ltgtirl1.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\templates\subscribeemail.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7ijc1x60o2"},{"Name":"integrity","Value":"sha256-Qe1zusqsb9i\u002BVL9iMziudEchGHMloOW9SnHnND4xXJg="},{"Name":"label","Value":"_content/MiniAppJuanTemplate/templates/subscribeemail.html"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2024"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022Qe1zusqsb9i\u002BVL9iMziudEchGHMloOW9SnHnND4xXJg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 14 Feb 2025 13:33:19 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"26ltgtirl1"},{"Name":"integrity","Value":"sha256-lmtTFfj6iEaetRFpdoMlL0K7UYnpwF0Ay9OqOAK5MMY="},{"Name":"label","Value":"_content/MiniAppJuanTemplate/templates/subscribeemail.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2083"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022lmtTFfj6iEaetRFpdoMlL0K7UYnpwF0Ay9OqOAK5MMY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 19 Feb 2025 09:39:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MiniAppJuanTemplate/templates/subscribeemail.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\templates\subscribeemail.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Qe1zusqsb9i\u002BVL9iMziudEchGHMloOW9SnHnND4xXJg="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2024"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022Qe1zusqsb9i\u002BVL9iMziudEchGHMloOW9SnHnND4xXJg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 14 Feb 2025 13:33:19 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lmtTFfj6iEaetRFpdoMlL0K7UYnpwF0Ay9OqOAK5MMY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2083"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022lmtTFfj6iEaetRFpdoMlL0K7UYnpwF0Ay9OqOAK5MMY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 19 Feb 2025 09:39:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

@@ -28,6 +28,7 @@ namespace MiniAppJuanTemplate.Data
         public DbSet<BasketItem> BasketItems { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderItem> OrderItems { get; set; }
+       
         public override int SaveChanges()
         {
             var entries = ChangeTracker.Entries<BaseAuditableEntity>();

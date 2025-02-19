@@ -64783,7 +64783,7 @@
       ]
     },
     {
-      "Route": "templates/subscribeemail.7ijc1x60o2.html",
+      "Route": "templates/subscribeemail.26ltgtirl1.html",
       "AssetFile": "templates/subscribeemail.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -64797,7 +64797,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2024"
+          "Value": "2083"
         },
         {
           "Name": "Content-Type",
@@ -64805,21 +64805,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Qe1zusqsb9i+VL9iMziudEchGHMloOW9SnHnND4xXJg=\""
+          "Value": "\"lmtTFfj6iEaetRFpdoMlL0K7UYnpwF0Ay9OqOAK5MMY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 13:33:19 GMT"
+          "Value": "Wed, 19 Feb 2025 09:39:01 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7ijc1x60o2"
+          "Value": "26ltgtirl1"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Qe1zusqsb9i+VL9iMziudEchGHMloOW9SnHnND4xXJg="
+          "Value": "sha256-lmtTFfj6iEaetRFpdoMlL0K7UYnpwF0Ay9OqOAK5MMY="
         },
         {
           "Name": "label",
@@ -64842,7 +64842,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2024"
+          "Value": "2083"
         },
         {
           "Name": "Content-Type",
@@ -64850,17 +64850,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Qe1zusqsb9i+VL9iMziudEchGHMloOW9SnHnND4xXJg=\""
+          "Value": "\"lmtTFfj6iEaetRFpdoMlL0K7UYnpwF0Ay9OqOAK5MMY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 14 Feb 2025 13:33:19 GMT"
+          "Value": "Wed, 19 Feb 2025 09:39:01 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Qe1zusqsb9i+VL9iMziudEchGHMloOW9SnHnND4xXJg="
+          "Value": "sha256-lmtTFfj6iEaetRFpdoMlL0K7UYnpwF0Ay9OqOAK5MMY="
         }
       ]
     }

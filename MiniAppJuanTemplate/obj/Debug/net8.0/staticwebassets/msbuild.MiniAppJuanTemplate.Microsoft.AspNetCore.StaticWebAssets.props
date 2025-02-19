@@ -14232,8 +14232,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7ijc1x60o2</Fingerprint>
-      <Integrity>Qe1zusqsb9i+VL9iMziudEchGHMloOW9SnHnND4xXJg=</Integrity>
+      <Fingerprint>26ltgtirl1</Fingerprint>
+      <Integrity>lmtTFfj6iEaetRFpdoMlL0K7UYnpwF0Ay9OqOAK5MMY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\templates\subscribeemail.html'))</OriginalItemSpec>
