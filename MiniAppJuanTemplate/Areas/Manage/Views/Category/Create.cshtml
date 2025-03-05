@@ -15,32 +15,35 @@
 @section scripts {
     @await Html.PartialAsync("_ValidationPartial")
 
-    <script type=“module”>
-
+    <script type="module">
         import {
-
-        ClassicEditor,
-        Essentials,
-        Paragraph,
-        Bold,
-        Italic,
-        Font
-
-        } from ‘ckeditor5’;
+            ClassicEditor,
+            Essentials,
+            Paragraph,
+            Bold,
+            Italic,
+            Font
+        } from 'ckeditor5';
 
         ClassicEditor
-        .create(document.querySelector(‘.ProductDetail’), {
+            .create(document.querySelector('.ProductDetail'), {
+                plugins: [Essentials, Paragraph, Bold, Italic, Font],
+                toolbar: [
+                    'undo', 'redo', '|', 'bold', 'italic', '|',
+                    'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor'
+                ]
+            })
+            .then(editor => {
+                window.editor = editor;
+            })
+            .catch(error => {
+                console.error(error);
+            });
 
-        plugins: [Essentials, Paragraph, Bold, Italic, Font], toolbar: [ ‘undo’, ‘redo’, ‘’, ‘bold’, ‘italic’, ‘’, ‘fontSize’, ‘fontFamily’, ‘fontColor’, ‘fontBackgroundColor’ ]
 
-        .then(editor => {
 
-        window.editor = editor;
-        })
 
-        .catch(error =>
-        { console.error(error);
-        });
+
     </script>
 
 }

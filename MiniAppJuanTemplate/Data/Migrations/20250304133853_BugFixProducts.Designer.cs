@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MiniAppJuanTemplate.Data;
 
@@ -11,9 +12,11 @@ using MiniAppJuanTemplate.Data;
 namespace MiniAppJuanTemplate.Data.Migrations
 {
     [DbContext(typeof(JuanAppDbContext))]
-    partial class JuanAppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250304133853_BugFixProducts")]
+    partial class BugFixProducts
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -47,26 +50,6 @@ namespace MiniAppJuanTemplate.Data.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "7c2697b0-84c1-45a2-8850-8ab262c00a69",
-                            Name = "Admin",
-                            NormalizedName = "ADMIN"
-                        },
-                        new
-                        {
-                            Id = "dd5a2e4a-da86-4cd9-98bc-4b99fd2a3185",
-                            Name = "Member",
-                            NormalizedName = "MEMBER"
-                        },
-                        new
-                        {
-                            Id = "8a6f10ea-11fe-46af-a4b3-ef0d9270cafc",
-                            Name = "SuperAdmin",
-                            NormalizedName = "SUPERADMIN"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -154,13 +137,6 @@ namespace MiniAppJuanTemplate.Data.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = "c5a86f31-1b43-4805-81ad-f3cf0ff672ce",
-                            RoleId = "dd5a2e4a-da86-4cd9-98bc-4b99fd2a3185"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -248,23 +224,6 @@ namespace MiniAppJuanTemplate.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "c5a86f31-1b43-4805-81ad-f3cf0ff672ce",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "a18e058e-7660-4628-a4f6-a7d12daaf289",
-                            EmailConfirmed = false,
-                            FullName = "Test",
-                            LockoutEnabled = false,
-                            NormalizedUserName = "_Test",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPfig1Vz4dGy3A8ByhAKAiTEa5hyr+b9UzRMsfQJSdm9xtz6O+tnO1IIMyMqnsGXmg==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "09ecafc5-5a12-4622-afc2-ffab1c1db1ab",
-                            TwoFactorEnabled = false,
-                            UserName = "_test"
-                        });
                 });
 
             modelBuilder.Entity("MiniAppJuanTemplate.Models.BasketItem", b =>

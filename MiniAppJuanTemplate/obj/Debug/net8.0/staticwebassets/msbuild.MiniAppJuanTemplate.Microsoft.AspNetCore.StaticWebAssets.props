@@ -12492,6 +12492,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\0e93151e-2583-4d39-8d23-b461dac2cd45.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\1dc755d4-2bef-4503-8754-3b5b950c55d6.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MiniAppJuanTemplate</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MiniAppJuanTemplate</BasePath>
+      <RelativePath>assets/img/product/1dc755d4-2bef-4503-8754-3b5b950c55d6.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bnca5n97xv</Fingerprint>
+      <Integrity>eXCbBIv3nZvN4YGIHFX8g9uy5OTjJbr+6od2Xg/nGmo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\1dc755d4-2bef-4503-8754-3b5b950c55d6.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\21725c69-fbab-4d98-9438-1b7bb69062de.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>MiniAppJuanTemplate</SourceId>
@@ -12509,6 +12527,78 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\21725c69-fbab-4d98-9438-1b7bb69062de.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\3333a5a2-f104-4cda-a1f0-2e1213e32682.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MiniAppJuanTemplate</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MiniAppJuanTemplate</BasePath>
+      <RelativePath>assets/img/product/3333a5a2-f104-4cda-a1f0-2e1213e32682.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bnca5n97xv</Fingerprint>
+      <Integrity>eXCbBIv3nZvN4YGIHFX8g9uy5OTjJbr+6od2Xg/nGmo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\3333a5a2-f104-4cda-a1f0-2e1213e32682.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\49add9d0-a60e-41ad-a6bc-60cf715c1df9.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MiniAppJuanTemplate</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MiniAppJuanTemplate</BasePath>
+      <RelativePath>assets/img/product/49add9d0-a60e-41ad-a6bc-60cf715c1df9.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>no0fztjg4x</Fingerprint>
+      <Integrity>yYe1+IwqnsWnM2JoyGDG8zMoMrLsj+XBHF5RaJy3VoU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\49add9d0-a60e-41ad-a6bc-60cf715c1df9.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\5f701fb6-72b0-4394-963f-e918bc32d062.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MiniAppJuanTemplate</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MiniAppJuanTemplate</BasePath>
+      <RelativePath>assets/img/product/5f701fb6-72b0-4394-963f-e918bc32d062.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>no0fztjg4x</Fingerprint>
+      <Integrity>yYe1+IwqnsWnM2JoyGDG8zMoMrLsj+XBHF5RaJy3VoU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\5f701fb6-72b0-4394-963f-e918bc32d062.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\614ca35a-2e4f-41a0-8e93-a70c65d47a68.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MiniAppJuanTemplate</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MiniAppJuanTemplate</BasePath>
+      <RelativePath>assets/img/product/614ca35a-2e4f-41a0-8e93-a70c65d47a68.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bnca5n97xv</Fingerprint>
+      <Integrity>eXCbBIv3nZvN4YGIHFX8g9uy5OTjJbr+6od2Xg/nGmo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\614ca35a-2e4f-41a0-8e93-a70c65d47a68.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\6c688e2e-806f-4105-bd3e-d5541c2b746a.jpg'))">
       <SourceType>Package</SourceType>
@@ -12546,6 +12636,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\71e8c131-d6d8-43b0-b7b5-000f46e06fab.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\7a125308-debf-4954-9bea-3c579bf06c5a.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MiniAppJuanTemplate</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MiniAppJuanTemplate</BasePath>
+      <RelativePath>assets/img/product/7a125308-debf-4954-9bea-3c579bf06c5a.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bnca5n97xv</Fingerprint>
+      <Integrity>eXCbBIv3nZvN4YGIHFX8g9uy5OTjJbr+6od2Xg/nGmo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\7a125308-debf-4954-9bea-3c579bf06c5a.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\7d8e1441-a5cf-45d4-baef-7b311807cf7b.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>MiniAppJuanTemplate</SourceId>
@@ -12563,6 +12671,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\7d8e1441-a5cf-45d4-baef-7b311807cf7b.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\89922e11-a1b5-441e-b089-2e85eb0da84d.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MiniAppJuanTemplate</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MiniAppJuanTemplate</BasePath>
+      <RelativePath>assets/img/product/89922e11-a1b5-441e-b089-2e85eb0da84d.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>no0fztjg4x</Fingerprint>
+      <Integrity>yYe1+IwqnsWnM2JoyGDG8zMoMrLsj+XBHF5RaJy3VoU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\89922e11-a1b5-441e-b089-2e85eb0da84d.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\af6f6930-5627-4adb-90e2-53b23039f773.jpg'))">
       <SourceType>Package</SourceType>
@@ -12582,6 +12708,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\af6f6930-5627-4adb-90e2-53b23039f773.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\b4e2a12f-e4fd-4738-8d32-ca0c375278fa.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MiniAppJuanTemplate</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MiniAppJuanTemplate</BasePath>
+      <RelativePath>assets/img/product/b4e2a12f-e4fd-4738-8d32-ca0c375278fa.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bnca5n97xv</Fingerprint>
+      <Integrity>eXCbBIv3nZvN4YGIHFX8g9uy5OTjJbr+6od2Xg/nGmo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\b4e2a12f-e4fd-4738-8d32-ca0c375278fa.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\bb73a99f-6703-4f21-ae84-54d35ce96c0c.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>MiniAppJuanTemplate</SourceId>
@@ -12599,6 +12743,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\bb73a99f-6703-4f21-ae84-54d35ce96c0c.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\cfeddf9b-1522-4da9-b827-625d7356c495.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MiniAppJuanTemplate</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MiniAppJuanTemplate</BasePath>
+      <RelativePath>assets/img/product/cfeddf9b-1522-4da9-b827-625d7356c495.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bnca5n97xv</Fingerprint>
+      <Integrity>eXCbBIv3nZvN4YGIHFX8g9uy5OTjJbr+6od2Xg/nGmo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\cfeddf9b-1522-4da9-b827-625d7356c495.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\pro-small-1.jpg'))">
       <SourceType>Package</SourceType>
@@ -12959,24 +13121,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\product\product-details-img4.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\slider\0196ac29-fadf-48c2-b1f2-21194b47bf2e.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>MiniAppJuanTemplate</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/MiniAppJuanTemplate</BasePath>
-      <RelativePath>assets/img/slider/0196ac29-fadf-48c2-b1f2-21194b47bf2e.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>8bwk1qn61u</Fingerprint>
-      <Integrity>lBmG6gNljRkQb+4d7Cjy47jbS1hSutuC7EZyA6gjAAw=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\slider\0196ac29-fadf-48c2-b1f2-21194b47bf2e.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\img\slider\slider-1.jpg'))">
       <SourceType>Package</SourceType>

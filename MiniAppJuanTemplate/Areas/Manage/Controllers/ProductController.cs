@@ -121,7 +121,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             _juanAppDbContext.SaveChanges();
 
             string? url = Url.Action("Detail", "Shop", new { id = product.Id }, Request.Protocol);
-            using StreamReader reader = new StreamReader("wwwroot/templates/subscribeemail");
+            using StreamReader reader = new StreamReader("wwwroot/templates/subscribeemail.html");
             var body = reader.ReadToEnd();
            
 

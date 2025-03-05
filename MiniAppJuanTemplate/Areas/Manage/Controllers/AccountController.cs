@@ -24,10 +24,11 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             AppUser user = new AppUser
             {
                 UserName = "_superadmin",
-                Email = "superadmin@gmail.com"
+                Email = "superadmin@gmail.com",
+                FullName="Superadmin",
             };
-            IdentityResult identityResult = await _userManager.CreateAsync(user, "SuperAdmin123_");
-            await _userManager.AddToRoleAsync(user, "superadmin");
+            IdentityResult identityResult = await _userManager.CreateAsync(user,"Salam123!");
+            await _userManager.AddToRoleAsync(user, "admin");
             return Json(identityResult);
         }
         public async Task<IActionResult> CreateRole()

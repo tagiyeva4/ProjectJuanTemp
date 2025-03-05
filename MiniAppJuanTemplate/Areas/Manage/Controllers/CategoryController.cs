@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using MiniAppJuanTemplate.Areas.Manage.Services.Implements;
 using MiniAppJuanTemplate.Data;
 using MiniAppJuanTemplate.Helpers;
 using MiniAppJuanTemplate.Models;
@@ -12,7 +13,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
     [Authorize(Roles = "admin,superadmin")]
     public class CategoryController : Controller
     {
-        private readonly   JuanAppDbContext _juanAppDbContext;
+        private readonly JuanAppDbContext _juanAppDbContext;
 
         public CategoryController(JuanAppDbContext juanAppDbContext)
         {
@@ -21,7 +22,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
 
         public IActionResult Index(int page = 1, int take = 2)
         {
-            var query = _juanAppDbContext.Category.Include(c => c.Products).OrderByDescending(c=>c.Id);
+            var query = _juanAppDbContext.Category.Include(c => c.Products).OrderByDescending(c => c.Id);
             PaginatedList<Category> paginatedlist = PaginatedList<Category>.Create(query, take, page);
             return View(paginatedlist);
         }
@@ -52,7 +53,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             {
                 return NotFound();
             }
-           Category category = _juanAppDbContext.Category.Include(g => g.Products).FirstOrDefault(c => c.Id == id);
+            Category category = _juanAppDbContext.Category.Include(g => g.Products).FirstOrDefault(c => c.Id == id);
             if (category == null)
             {
                 return NotFound();
@@ -72,7 +73,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
                 ModelState.AddModelError("Name", "This genre already exist");
                 return View();
             }
-           Category existCategory =_juanAppDbContext.Category.Include(c => c.Products).FirstOrDefault(c => c.Id == category.Id);
+            Category existCategory = _juanAppDbContext.Category.Include(c => c.Products).FirstOrDefault(c => c.Id == category.Id);
             if (category == null)
             {
                 return NotFound();
@@ -87,7 +88,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             {
                 return NotFound();
             }
-            Category? category = _juanAppDbContext.Category.Include(c =>c.Products ).FirstOrDefault(c=> c.Id == id);
+            Category? category = _juanAppDbContext.Category.Include(c => c.Products).FirstOrDefault(c => c.Id == id);
 
             if (category == null)
             {
@@ -96,7 +97,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             _juanAppDbContext.Category.Remove(category);
             _juanAppDbContext.SaveChanges();
 
-            return RedirectToAction("Index","Category");
+            return RedirectToAction("Index", "Category");
         }
         public IActionResult Detail(int? id)
         {
@@ -104,7 +105,7 @@ namespace MiniAppJuanTemplate.Areas.Manage.Controllers
             {
                 return NotFound();
             }
-            Category category = _juanAppDbContext.Category.Include(c =>c.Products).FirstOrDefault(c => c.Id == id);
+            Category category = _juanAppDbContext.Category.Include(c => c.Products).FirstOrDefault(c => c.Id == id);
             if (category == null)
             {
                 return NotFound();

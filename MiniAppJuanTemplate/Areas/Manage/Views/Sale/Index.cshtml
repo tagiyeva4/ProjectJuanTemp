@@ -28,3 +28,51 @@
 
     </tbody>
 </table> *@
+@model List<Order>
+
+@{
+    int count = 1;
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Müştəri Adı</th>
+            <th>Məhsul</th>
+            <th>Qiymət</th>
+            <th>Sifariş Status</th>
+            <th>Sifariş Tarixi</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@(count++)</td>
+                <td>@order.AppUser.UserName</td>
+                <td>
+                    @foreach (var item in order.OrderItems)
+                    {
+                        <div>
+                            @item.Product.Name * @item.Count<!-- Məhsul adı -->
+                        </div>
+                    }
+                
+                </td>
+               
+                <td>
+                    @foreach (var item in order.OrderItems)
+                    {
+                        <div>
+
+                            $  @(((item.Product.CostPrice - ((item.Product.CostPrice * item.Product.DiscountPercentege) / 100)) * item.Count).ToString("0.00"))
+                        </div>
+                    }
+                </td>
+                <td>@order.OrderStatus</td> <!-- Ödəniş statusu -->
+                <td>@order.CreatedDate</td> <!-- Sifariş tarixi -->
+            </tr>
+        }
+    </tbody>
+</table>

@@ -26,9 +26,11 @@
                         </p>
                     </div>
                     <button class="minicart-remove">
-                        <a asp-action="RemoveToBasket" asp-controller="Basket" asp-route-id="@product.Id" class="product-item_remove"><i class="fa-solid fa-trash-can"></i></a>
-
+                        <a asp-action="RemoveToBasketAsync" asp-controller="Basket" asp-route-id="@product.Id" data-id="@product.Id" class="product-item-remove">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </a>
                     </button>
+
                 </li>
             }
 
@@ -63,5 +65,27 @@
 
     <script>
         document.querySelector(".basketCountarea").innerHTML=@Model.Count
+
+       document.querySelectorAll(".product-item-remove").forEach(link => {
+        link.addEventListener("click", async function (e) {
+            e.preventDefault();
+            let productId = this.getAttribute("data-id");
+
+            let response = await fetch(`/Basket/RemoveToBasket/${productId}`, {
+                method: "GET", 
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            });
+
+            let result = await response.json();
+
+            if (response.ok && result.success) {
+                this.closest(".basket-item").remove(); 
+            } 
+        });
+    });
+
+
     </script>
 

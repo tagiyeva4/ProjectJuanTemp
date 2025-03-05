@@ -47,13 +47,17 @@ namespace MiniAppJuanTemplate.Controllers
                 .Include(u => u.BasketItems)
                 .ThenInclude(pi => pi.Product)
                 .FirstOrDefault(u => u.UserName == User.Identity.Name);
+
+
+
             CheckOutVm checkOutVm = new CheckOutVm();
             checkOutVm.CheckoutItemVms = user.BasketItems.Select(p => new CheckoutItemVm
             {
-                ProductName = p.Product.Name,
+                ProductName = p.Product?.Name ?? "product",
                 TotalItemPrice = p.Product.DiscountPercentege > 0 ? (p.Product.CostPrice - (p.Product.CostPrice * p.Product.DiscountPercentege) / 100) * p.Count : p.Product.CostPrice * p.Count,
                 Count = p.Count,
             }).ToList();
+
             return View(checkOutVm);
         }
         [HttpPost]

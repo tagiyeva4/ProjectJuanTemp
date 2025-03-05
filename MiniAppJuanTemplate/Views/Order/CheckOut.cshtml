@@ -43,7 +43,7 @@
                                     </p>
                                     <div class="login-reg-form-wrap mt-20">
                                         <div class="row">
-                                            <div class="col-lg-7 m-auto">
+                                           @*  <div class="col-lg-7 m-auto">
                                                 <form action="#" method="post">
                                                     <div class="row">
                                                         <div class="col-md-12">
@@ -79,7 +79,7 @@
                                                         <button class="btn btn-sqr">Login</button>
                                                     </div>
                                                 </form>
-                                            </div>
+                                            </div> *@
                                         </div>
                                     </div>
                                 </div>
@@ -96,12 +96,12 @@
                             <div id="couponaccordion" class="collapse" data-parent="#checkOutAccordion">
                                 <div class="card-body">
                                     <div class="cart-update-option">
-                                        <div class="apply-coupon-wrapper">
+                                       @*  <div class="apply-coupon-wrapper">
                                             <form action="#" method="post" class=" d-block d-md-flex">
                                                 <input type="text" placeholder="Enter Your Coupon Code" required />
                                                 <button class="btn btn-sqr">Apply Coupon</button>
                                             </form>
-                                        </div>
+                                        </div> *@
                                     </div>
                                 </div>
                             </div>
@@ -117,6 +117,8 @@
                         <h4 class="checkout-title">Billing Details</h4>
                         <div class="billing-form-wrap">
                             <form method="post" id="checkoutForm">
+                                <button type="submit" form="checkoutForm" class="btn btn-sqr">Place Order</button>
+
                                 <div class="single-input-item">
                                     <label asp-for="@Model.OrderVm.CompanyName">Company Name</label>
                                     <input asp-for="@Model.OrderVm.CompanyName" placeholder="Company Name" />
@@ -263,7 +265,7 @@
                                             {
                                             <tr>
                                                 <td>
-                                                    <span class="left">@item.ProductName X 0@(item.Count)</span>
+                                                    <span class="left">@item.ProductName X @item.Count</span>
                                                 </td>
                                                 <td>
                                                     <span class="right">$@item.TotalItemPrice</span>
@@ -355,7 +357,7 @@
                                             the website <a href="index.html">terms and conditions.</a>
                                         </label>
                                     </div> *@
-                                    <button type="submit" form="checkoutForm" class="btn btn-sqr">Place Order</button>
+                                    @* <button type="submit" form="checkoutForm" class="btn btn-sqr">Place Order</button> *@
                                 </div>
                             </div>
                         </div>
@@ -367,7 +369,7 @@
     <!-- checkout main wrapper end -->
 </main>
 <!-- main wrapper end -->
-@section scripts {
+@* @section scripts {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js" integrity="sha512-xq+Vm8jC94ynOikewaQXMEkJIOBp7iArs3IhFWSWdRT3Pq8wFz46p+ZDFAR7kHnSFf+zUv52B3prRYnbDRdgog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-}
+} *@

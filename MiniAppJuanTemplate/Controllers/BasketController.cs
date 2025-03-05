@@ -96,44 +96,50 @@ namespace MiniAppJuanTemplate.Controllers
             return View(basketItemVms);
         }
 
-        public async Task<IActionResult> RemoveToBasket(int id)
+        [HttpGet]
+        public async Task<IActionResult> RemoveToBasketAsync(int id)
         {
+
             if (User.Identity?.IsAuthenticated ?? false)
             {
                 var user = await _userManager.GetUserAsync(User);
-
                 if (user is null)
-                    return BadRequest();
+                {
+                    return NotFound(new { message = "User Not Found!" });
+                }
 
-                var basketItem = await _juanAppDbContext.BasketItems.FirstOrDefaultAsync(x => x.AppUserId == user.Id && x.ProductId == id);
+                var basketItem = await _juanAppDbContext.BasketItems
+                    .FirstOrDefaultAsync(x => x.AppUserId == user.Id && x.Id == id);
 
                 if (basketItem is null)
+                {
                     return NotFound();
+                }
 
                 _juanAppDbContext.BasketItems.Remove(basketItem);
                 await _juanAppDbContext.SaveChangesAsync();
+                return RedirectToAction("Index", "Home");
+
             }
             else
             {
                 List<BasketItemVm> basketItems = [];
-
                 var cookieValue = Request.Cookies["basket"];
-
                 if (cookieValue is not null)
                 {
                     basketItems = JsonConvert.DeserializeObject<List<BasketItemVm>>(cookieValue) ?? [];
                 }
 
                 var existItem = basketItems.FirstOrDefault(x => x.Id == id);
-
                 if (existItem is null)
+                {
                     return NotFound();
+                }
 
                 basketItems.Remove(existItem);
-
                 var json = JsonConvert.SerializeObject(basketItems);
-
                 Response.Cookies.Append("basket", json);
+
             }
             string? returnUrl = Request.Headers["Referer"];
 
@@ -142,5 +148,7 @@ namespace MiniAppJuanTemplate.Controllers
 
             return Redirect(returnUrl);
         }
+
+
     }
 }

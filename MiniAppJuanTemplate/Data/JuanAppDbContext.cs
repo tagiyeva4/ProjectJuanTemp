@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MiniAppJuanTemplate.Models;
 using MiniAppJuanTemplate.Models.Common;
@@ -62,6 +63,61 @@ namespace MiniAppJuanTemplate.Data
 
             modelBuilder.Entity<Product>().HasQueryFilter(x => !x.IsDeleted);
             modelBuilder.Entity<Tag>().HasQueryFilter(x => !x.IsDeleted);
+
+
+
+            #region seedData
+
+            var userId = Guid.NewGuid().ToString();
+            var adminId = Guid.NewGuid().ToString();
+            var memberId = Guid.NewGuid().ToString();
+            var superAdminId = Guid.NewGuid().ToString();
+
+
+            //Seeding a  'Administrator' role to AspNetRoles table
+            modelBuilder.Entity<IdentityRole>().HasData(
+                new IdentityRole
+                {
+                    Id = adminId,
+                    Name = "Admin",
+                    NormalizedName = "ADMIN".ToUpper()
+                },
+                new IdentityRole
+                {
+                    Id = memberId,
+                    Name = "Member",
+                    NormalizedName = "MEMBER".ToUpper()
+                },
+                new IdentityRole
+                {
+                    Id = superAdminId,
+                    Name = "SuperAdmin",
+                    NormalizedName = "SUPERADMIN".ToUpper()
+                }
+            );
+            //a hasher to hash the password before seeding the user to the db
+            var hasher = new PasswordHasher<IdentityUser>();
+
+            modelBuilder.Entity<AppUser>().HasData(
+           new AppUser
+           {
+               Id = userId, // primary key
+               FullName = "Test",
+               UserName = "_test",
+               NormalizedUserName = "_Test",
+               PasswordHash = hasher.HashPassword(null, "12345@Tt")
+           }
+            );
+            //Seeding the relation between our user and role to AspNetUserRoles table
+            modelBuilder.Entity<IdentityUserRole<string>>().HasData(
+                new IdentityUserRole<string>
+                {
+                    RoleId = memberId,
+                    UserId = userId
+                }
+            );
+
+            #endregion
         }
     }
 }

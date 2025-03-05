@@ -22,7 +22,7 @@
                 {
                     <tr>
                         <td>@(++count)</td>
-                        <td>@category.Name</td>
+                        <td>@Html.Raw(category.Name)</td>
                         <td>@category.Products.Count</td>
                         <td>
                             <a class="btn btn-primary" asp-action="edit" asp-route-id="@category.Id">Edit</a>
