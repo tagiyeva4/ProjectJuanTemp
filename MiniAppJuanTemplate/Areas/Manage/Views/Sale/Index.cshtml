@@ -1,34 +1,4 @@
-﻿@* @model List<Order>
-@{
-    int count = 1;
-}
-<table>
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Müştəri Adı</th>
-            <th>Məhsul</th>
-            <th>Miqdar</th>
-            <th>Qiymət</th>
-            <th>Ödəniş Statusu</th>
-            <th>Sifariş Tarixi</th>
-            <th>Detallar</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach(var order in Model)
-        {
-            <tr>
-                <td>@count++</td>
-                <td>@order.AppUser.UserName</td>
-                <td>@order.CreatedDate</td>
-                <td>@order.OrderItems.Count</td>
-            </tr>
-        }
-
-    </tbody>
-</table> *@
-@model List<Order>
+﻿@model List<Order>
 
 @{
     int count = 1;
@@ -42,7 +12,7 @@
             <th>Qiymət</th>
             <th>Sifariş Status</th>
             <th>Sifariş Tarixi</th>
-            
+            <th>Sifariş</th>
         </tr>
     </thead>
     <tbody>
@@ -66,12 +36,15 @@
                     {
                         <div>
 
-                            $  @(((item.Product.CostPrice - ((item.Product.CostPrice * item.Product.DiscountPercentege) / 100)) * item.Count).ToString("0.00"))
+                            $@(((item.Product.CostPrice - ((item.Product.CostPrice * item.Product.DiscountPercentege) / 100)) * item.Count).ToString("0.00"))
                         </div>
                     }
                 </td>
                 <td>@order.OrderStatus</td> <!-- Ödəniş statusu -->
                 <td>@order.CreatedDate</td> <!-- Sifariş tarixi -->
+                <td>
+                    <a class="btn" asp-action="reject" asp-route-id="@order.Id" >Delete</a>
+                </td>
             </tr>
         }
     </tbody>

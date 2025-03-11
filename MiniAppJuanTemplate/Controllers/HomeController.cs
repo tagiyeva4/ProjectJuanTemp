@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
 using MiniAppJuanTemplate.Data;
 using MiniAppJuanTemplate.ViewModels;
@@ -8,10 +9,12 @@ namespace MiniAppJuanTemplate.Controllers
     public class HomeController : Controller
     {
         private readonly JuanAppDbContext _juanAppDbContext;
+        private readonly IHubContext<ChatHub> _hubContext;
 
-        public HomeController(JuanAppDbContext juanAppDbContext)
+        public HomeController(JuanAppDbContext juanAppDbContext, IHubContext<ChatHub> hubContext)
         {
             _juanAppDbContext = juanAppDbContext;
+            this._hubContext = hubContext;
         }
 
         public IActionResult Search(string search)
@@ -44,6 +47,15 @@ namespace MiniAppJuanTemplate.Controllers
             homeVm.Products=_juanAppDbContext.Products.ToList();
             homeVm.NewProducts=_juanAppDbContext.Products.Where(p=>p.IsNew==true).ToList();
             return View(homeVm);
+        }
+
+        public IActionResult ShowAlert(string userId)
+        {
+            var user = _juanAppDbContext.Users.Find(userId);
+            _hubContext.Clients.Client(user.ConnectionId).SendAsync("ShowAlert", userId);
+
+            return Content("");
+
         }
     }
 }

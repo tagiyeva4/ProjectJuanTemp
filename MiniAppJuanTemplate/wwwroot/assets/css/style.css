@@ -27,6 +27,9 @@ Table of content
 -------------------------------------------------------------------*/
 /*------ Typography Style Start ------*/
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700,800,900|Open+Sans:300,400,600,700,800&amp;display=swap");
+
+
+
 body {
   color: #666666;
   font-weight: 400;
@@ -3681,3 +3684,16 @@ fieldset {
     color: #e3a51e; }
 
 /*------- footer bottom end -------*/
+.circleIcon{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    display:inline-block;
+}
+.bg-online {
+    background-color: forestgreen;
+}
+
+.bg-offline {
+    background-color: gray;
+}

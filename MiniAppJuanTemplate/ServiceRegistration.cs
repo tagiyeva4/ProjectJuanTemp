@@ -12,7 +12,7 @@ namespace MiniAppJuanTemplate
     {
         public static void Register(this IServiceCollection services,IConfiguration config)
         {
-
+            services.AddSignalR();
             services.AddControllersWithViews();
 
             services.AddDbContext<JuanAppDbContext>(options =>

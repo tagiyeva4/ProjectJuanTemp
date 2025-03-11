@@ -1,0 +1,92 @@
+﻿@page
+@{
+    var users =(List<AppUser>)ViewBag.Users;
+}
+<style>
+    .circleIcon {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .bg-online {
+        background-color: forestgreen;
+    }
+
+    .bg-offline {
+        background-color: gray;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="coL-6">
+            <div class="row p-1">
+                <div class="col-1">User</div>
+                <div class="col-5"><input type="text" id="userInput" /></div>
+            </div>
+            <div class="row p-1">
+                <div class="col-1">Message</div>
+                <div class="col-5"><input type="text" class="w-100" id="messageInput" /></div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6 text-end">
+                    <input type="button" id="sendButton" value="Send Message" />
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6">
+                    <hr />
+                </div>
+            </div>
+            <div class="row p-1">
+                <div class="col-6">
+                    <ul id="messagesList"></ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <ul class="list-group">
+                @foreach(var user in users)
+                {
+                    <li class="list-group-item" id="@user.Id"><span class="circleIcon @(user.ConnectionId!=null?"bg-online":"bg-offline")"></span> @user.UserName  <a asp-action="ShowAlert" asp-controller="home" asp-route-userId="@user.Id"> send </a></li>
+                }
+            </ul>
+       </div>
+   </div>
+</div>
+@section scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js" integrity="sha512-7SRCYIJtR6F8ocwW7UxW6wGKqbSyqREDbfCORCbGLatU0iugBLwyOXpzhkPyHIFdBO0K2VCu57fvP2Twgx1o2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        var connection=new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
+
+        connection.start();//start geriye promise qaytarir,then de handle edir
+        console.log(connection);
+        document.getElementById("sendButton").onclick=function(){
+          var user=document.getElementById("userInput").value;
+            var message=document.getElementById("messageInput").value;
+          connection.invoke("SendMessage", user, message);
+        };
+                connection.on("ReceiveMessage", function (user, message) {
+            var li = document.createElement("li");
+            document.getElementById("messagesList").appendChild(li);
+            li.textContent = `${user} : ${message}`;
+        });
+
+              connection.on("UserConnected", function (userId) {
+                  document.getElementById(userId).firstElementChild.classList.remove("bg-offline");
+                    document.getElementById(userId).firstElementChild.classList.add("bg-online");
+
+        });
+
+                 connection.on("UserDisConnected", function (userId) {
+              document.getElementById(userId).firstElementChild.classList.remove("bg-online");
+                    document.getElementById(userId).firstElementChild.classList.add("bg-offline");
+        });
+
+            connection.on("ShowAlert", function (userId) {
+                alert("User" + userId + "is online");
+        });
+    </script>
+}
