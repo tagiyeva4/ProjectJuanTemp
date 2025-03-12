@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\views\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\views\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\areas\\manage\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\areas\\manage\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\areas\\manage\\views\\sale\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\areas\\manage\\views\\sale\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\views\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\views\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|solutionrelative:miniappjuantemplate\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{945E2993-74AC-4985-8AE1-50D3E769CB2D}|MiniAppJuanTemplate\\MiniAppJuanTemplate.csproj|c:\\users\\asus\\source\\repos\\miniappjuantemplate\\miniappjuantemplate\\data\\migrations\\20250304133945_addedseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,17 +70,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Chat\\Index.cshtml",
               "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Views\\Chat\\Index.cshtml",
               "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Chat\\Index.cshtml",
               "RelativeToolTip": "MiniAppJuanTemplate\\Views\\Chat\\Index.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFgAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADMAAAB1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-09T18:53:12.618Z",
               "IsPinned": true,
@@ -76,15 +88,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Views\\Sale\\Index.cshtml",
-              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Areas\\Manage\\Views\\Sale\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Views\\Sale\\Index.cshtml",
-              "RelativeToolTip": "MiniAppJuanTemplate\\Areas\\Manage\\Views\\Sale\\Index.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-10T21:38:29.935Z",
+              "DocumentIndex": 2,
+              "Title": "SaleController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\SaleController.cs",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\SaleController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\SaleController.cs",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Areas\\Manage\\Controllers\\SaleController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T08:12:11.348Z",
               "EditorCaption": ""
             },
             {
@@ -94,6 +106,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Views\\Sale\\Index.cshtml",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Areas\\Manage\\Views\\Sale\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Areas\\Manage\\Views\\Sale\\Index.cshtml",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Areas\\Manage\\Views\\Sale\\Index.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-10T21:38:29.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\ChatHub.cs",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\ChatHub.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\ChatHub.cs",
+              "RelativeToolTip": "MiniAppJuanTemplate\\ChatHub.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwB4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-09T18:54:04.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAAADsBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-12T08:42:50.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MiniAppJuanTemplate\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAMgCAAAAAAAAAAAAAPACAAABAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-12T08:27:33.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ServiceRegistration.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\ServiceRegistration.cs",
               "RelativeDocumentMoniker": "MiniAppJuanTemplate\\ServiceRegistration.cs",
@@ -101,12 +165,11 @@
               "RelativeToolTip": "MiniAppJuanTemplate\\ServiceRegistration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T18:54:56.212Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T18:54:56.212Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Controllers\\HomeController.cs",
@@ -114,12 +177,11 @@
               "RelativeToolTip": "MiniAppJuanTemplate\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T21:57:37.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T21:57:37.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "20250304133945_addedSeedData.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Data\\Migrations\\20250304133945_addedSeedData.cs",
               "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Data\\Migrations\\20250304133945_addedSeedData.cs",
@@ -131,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "20250309211343_addConnectionIdColumn.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Data\\Migrations\\20250309211343_addConnectionIdColumn.cs",
               "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Data\\Migrations\\20250309211343_addConnectionIdColumn.cs",
@@ -143,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "AppUser.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Models\\AppUser.cs",
               "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Models\\AppUser.cs",
@@ -155,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "20250309211720_addConnectionIdColumn1.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Data\\Migrations\\20250309211720_addConnectionIdColumn1.cs",
               "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Data\\Migrations\\20250309211720_addConnectionIdColumn1.cs",
@@ -167,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "JuanAppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Data\\JuanAppDbContext.cs",
               "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Data\\JuanAppDbContext.cs",
@@ -179,19 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ChatHub.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\ChatHub.cs",
-              "RelativeDocumentMoniker": "MiniAppJuanTemplate\\ChatHub.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\ChatHub.cs",
-              "RelativeToolTip": "MiniAppJuanTemplate\\ChatHub.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T18:54:04.922Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "20250309211017_addConnectionIdColumn.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Data\\Migrations\\20250309211017_addConnectionIdColumn.cs",
               "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Data\\Migrations\\20250309211017_addConnectionIdColumn.cs",
@@ -203,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MiniAppJuanTemplate\\MiniAppJuanTemplate\\Program.cs",
               "RelativeDocumentMoniker": "MiniAppJuanTemplate\\Program.cs",

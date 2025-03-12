@@ -25,12 +25,12 @@
                     @foreach (var item in order.OrderItems)
                     {
                         <div>
-                            @item.Product.Name * @item.Count<!-- Məhsul adı -->
+                            @item.Product.Name * @item.Count
                         </div>
                     }
-                
+
                 </td>
-               
+
                 <td>
                     @foreach (var item in order.OrderItems)
                     {
@@ -40,8 +40,18 @@
                         </div>
                     }
                 </td>
-                <td>@order.OrderStatus</td> <!-- Ödəniş statusu -->
-                <td>@order.CreatedDate</td> <!-- Sifariş tarixi -->
+                @if (order.OrderStatus == OrderStatus.Pending)
+                {
+                    <td>
+                        <a class="btn" asp-action="reject" asp-route-id="@order.Id">Reject</a>
+                        <a class="btn" asp-action="accept" asp-route-id="@order.Id">Accept</a>
+                    </td>
+                }
+                else
+                {
+                    <td>@order.OrderStatus</td> 
+                }
+                <td>@order.CreatedDate</td> 
                 <td>
                     <a class="btn" asp-action="reject" asp-route-id="@order.Id" >Delete</a>
                 </td>
